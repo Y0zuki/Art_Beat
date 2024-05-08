@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Homepage</title>
+  <link rel="stylesheet" href="Homepage.css">
+  <link rel="shortcut icon" href="Photos/Logo ArtBeat blue.png" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
+  <link href='https://fonts.google.com/specimen/Alice?query=Alice' rel='stylesheet'>
+  <link href='https://fonts.google.com/specimen/Cardo?query=cardo' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="box flex-container">
+    <div> <img src="Photos/logo horizontal.png" style="height: 100px; width: 160px; margin-top: -10%; margin-left: 5%;"></div>
+    <div class="Textbox1"></div>
+    <button class="button1" style="height: 50px; width: 210px; font-family: 'Shrikhand' ">Home</button>
+    <button class="button2" style="height: 50px; width: 210px;  font-family: 'Shrikhand' ">Explore</button>
+    <button class="button3" style="height: 50px; width: 210px;  font-family: 'Shrikhand' ">Community</button>
+    <button class="button4" style="height: 50px; width: 210px;  font-family: 'Shrikhand'"
+      onclick="document.location='HelpCenter.html'">Help</button>
+
+  </div>
+  <div class="WelcomeBanner" style="margin-top: 130px; margin-left: 140px; font-family: 'Shrikhand' ">WELCOME TO
+    Art Beat
+    <div class="TextWelcome" style="font-family: Alice;">Hello fellow user, welcome to Art Beat!</div>
+  </div>
+
+  <div class="AboutPage" style="font-family: Shrikhand;">About Page
+    <div class="Imageaboutpage" style="width: 340px; height: 340px; margin-left: -60px;">
+      <div><img src="Photos/earphone.jpg" style="height: 300px; width: 300px; margin-left: 20px; margin-top: 20px;">
+      </div>
+    </div>
+  </div>
+  <div class="buttonreadmore" style="margin-left: 90px; font-family: Shrikhand;">READ MORE</div>
+  <div class="short_infomation" style="margin-top: -410px; margin-left: 390px; font-family: Alice;">Art Beat is a
+    platfrom for <br> music lovers to enjoy and <br> discover new songs of their <br> taste aswell as your favourite <br>
+    artist.</div>
+
+  <div class="Articlebackcover"></div>
+  <div class="Movingarticle" style="height: 110px; width: 400px; margin-left: 1000px; margin-top: -170px; ">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="Photos/poster1.jpg" style="width: 75%; height: 400px; margin-left: 45px;">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="Photos/poster2.jpg" style="width: 75%; height: 400px; margin-left: 45px;">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="Photos/poster3.jpg" style="width: 75%; height: 400px; margin-left: 45px;">
+      </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center; margin-top: 20px;">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 10 seconds
+      }
+    </script>
+  </div>
+  <div class="Movingarticlebackcover" style="height: 440px; width: 340px; margin-left: 1024px; margin-top: -130px; ">
+  </div>
+
+  <div class="Signin" style="margin-top: 100px;">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+          <h2 style="text-align:center">Login with Social Media or Manually</h2>
+          <div class="vl">
+            <span class="vl-innertext">or</span>
+          </div>
+
+          <div class="col">
+            <a href="#" class="fb btn">
+              <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+            </a>
+            <a href="#" class="twitter btn">
+              <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+            </a>
+            <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+              </i> Login with Google+
+            </a>
+          </div>
+
+          <div class="col">
+            <div class="hide-md-lg">
+              <p>Or sign in manually:</p>
+            </div>
+
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div class="bottom-container">
+      <div class="row">
+        <div class="col">
+          <a href="#" style="color:rgb(255, 255, 255)" class="btn">Sign up</a>
+        </div>
+        <div class="col">
+          <a href="#" style="color:rgb(255, 255, 255)" class="btn">Forgot password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
