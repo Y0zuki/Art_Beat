@@ -1,0 +1,195 @@
+body {
+  background-image: url(Photos/\ -3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.575);
+  height: 100px;
+  margin-bottom: -100px;
+  position: relative;
+  z-index: 210;
+}
+
+.button1 {
+  position: relative;
+  background-color: rgba(193, 172, 222, 0.688);
+  border: rgba(177, 131, 190, 0.431);
+  border-style: solid;
+  font-size: 20px;
+  color: #8f75b1;
+  padding: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  margin-top: 25px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  /*height: 50px;*/
+}
+
+.button1:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button1:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.flex-container {
+  display: flex;
+  justify-content: right;
+  justify-content: space-between;
+
+}
+
+.flex-container>div {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.button2 {
+  position: relative;
+  background-color: rgba(193, 172, 222, 0.688);
+  border: rgba(177, 131, 190, 0.431);
+  border-style: solid;
+  font-size: 20px;
+  color: #8f75b1;
+  padding: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  margin-top: 25px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button2:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button2:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.button3 {
+  position: relative;
+  background-color: rgba(193, 172, 222, 0.688);
+  border: rgba(177, 131, 190, 0.431);
+  border-style: solid;
+  font-size: 20px;
+  color: #8f75b1;
+  padding: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  margin-top: 25px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button3:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button3:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.button4 {
+  position: relative;
+  background-color: rgba(193, 172, 222, 0.688);
+  border: rgba(177, 131, 190, 0.431);
+  border-style: solid;
+  font-size: 20px;
+  color: #8f75b1;
+  padding: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  margin-top: 25px;
+  margin-right: 15px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+.button4:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button4:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.AboutPage {
+  background-color: #ffffff84;
+  height: 1600px;
+}
+
+.TextStyle {
+  color: #030304;
+  text-align: center;
+  font-size: 60px;
+}

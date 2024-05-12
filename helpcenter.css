@@ -1,0 +1,472 @@
+body {
+  background-image: url(Photos/\ -3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.575);
+  height: 100px;
+  margin-bottom: -100px;
+  position: relative;
+  z-index: 210;
+}
+
+.button1 {
+  position: relative;
+  background-color: rgba(193, 172, 222, 0.688);
+  border: rgba(177, 131, 190, 0.431);
+  border-style: solid;
+  font-size: 20px;
+  color: #8f75b1;
+  padding: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  margin-top: 25px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  /*height: 50px;*/
+}
+
+.button1:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button1:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.flex-container {
+  display: flex;
+  justify-content: right;
+  justify-content: space-between;
+
+}
+
+.flex-container>div {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.button2 {
+  position: relative;
+  background-color: rgba(193, 172, 222, 0.688);
+  border: rgba(177, 131, 190, 0.431);
+  border-style: solid;
+  font-size: 20px;
+  color: #8f75b1;
+  padding: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  margin-top: 25px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button2:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button2:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.button3 {
+  position: relative;
+  background-color: rgba(193, 172, 222, 0.688);
+  border: rgba(177, 131, 190, 0.431);
+  border-style: solid;
+  font-size: 20px;
+  color: #8f75b1;
+  padding: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  margin-top: 25px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button3:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button3:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.button4 {
+  position: relative;
+  background-color: rgba(193, 172, 222, 0.688);
+  border: rgba(177, 131, 190, 0.431);
+  border-style: solid;
+  font-size: 20px;
+  color: #8f75b1;
+  padding: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  margin-top: 25px;
+  margin-right: 15px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+.button4:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button4:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+
+.Coverforbuttonpage {
+  background: rgba(255, 255, 255, 0.575);
+  margin-top: 250px; 
+  height: 500px;
+  margin-bottom: -100px;
+  position: relative;
+  z-index: 210;
+}
+
+.Socialcover {
+  background: rgba(137, 122, 214, 0.454);
+  height: 100px;
+  margin-bottom: -100px;
+  position: relative;
+  z-index: 210;
+}
+
+.Pictureframe1 {
+  height: 450px;
+  width: 450px;
+  margin-left: 30px;
+  margin-top: -450px;
+  background: linear-gradient(to bottom right, rgba(208, 241, 251, 0.543), rgba(25, 94, 255, 0.543));
+}
+
+.Pictureframe2 {
+  height: 450px;
+  width: 450px;
+  margin-left: 1000px;
+  margin-top: -425px;
+  background: linear-gradient(to bottom right, rgb(201, 244, 255, 0.543), rgb(25, 94, 255, 0.543));
+}
+
+.button5 {
+  position: relative;
+  background-color: rgba(133, 151, 231, 0.688);
+  border: rgba(59, 90, 183, 0.431);
+  border-style: solid;
+  font-size: 20px;
+  color: #4975a8;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  margin-top: -150px;
+  margin-bottom: 300px;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  height: 30px;
+}
+
+.button5:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button5:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.button6 {
+  position: relative;
+  background-color: rgba(133, 151, 231, 0.688);
+  border: rgba(59, 90, 183, 0.431);
+  border-style: solid;
+  font-size: 20px;
+  color: #4975a8;
+  padding: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  margin-bottom: 25px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  /*height: 50px;*/
+}
+
+.button6:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button6:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.button7 {
+  position: relative;
+  background-color: rgba(133, 151, 231, 0.688);
+  border: rgba(59, 90, 183, 0.431);
+  border-style: solid;
+  font-size: 20px;
+  color: #4975a8;
+  padding: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  margin-bottom: 25px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  /*height: 50px;*/
+}
+
+.button7:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button7:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.button8 {
+  position: relative;
+  background-color: rgba(133, 151, 231, 0.688);
+  border: rgba(59, 90, 183, 0.431);
+  border-style: solid;
+  font-size: 20px;
+  color: #4975a8;
+  padding: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  margin-bottom: 25px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  /*height: 50px;*/
+}
+
+.button8:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button8:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.button9 {
+  position: relative;
+  background-color: #8597e7af;
+  border: rgba(59, 90, 183, 0.431);
+  border-style: solid;
+  font-size: 20px;
+  color: #4975a8;
+  padding: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  margin-bottom: 25px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  /*height: 50px;*/
+}
+
+.button9:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button9:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.button10 {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border: #ffffff;
+  border-style: solid;
+  font-size: 20px;
+  color: #3b5ab76e;
+  padding: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  margin-bottom: 25px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  /*height: 50px;*/
+}
+
+.button10-:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button10:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.HelpCenterBanner {
+  background-color: #8597e7d2;
+  border-style: solid;
+  font-size: 20px;
+  color: #4975a8;
+  padding: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.Icons {
+  img {
+    border-radius: 50%;
+    width: 120px;
+  }
+}
