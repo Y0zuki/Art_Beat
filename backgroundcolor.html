@@ -1,0 +1,205 @@
+<html>
+
+<head>
+    <title>Background Color</title>
+    <link rel="stylesheet" href="backgroundcolor.css">
+    <link rel="shortcut icon" href="Photos/Logo ArtBeat blue.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
+    <link href='https://fonts.google.com/specimen/Alice?query=Alice' rel='stylesheet'>
+    <link href='https://fonts.google.com/specimen/Cardo?query=cardo' rel='stylesheet'>
+</head>
+
+<body>
+
+
+    <div class="box flex-container"
+        style="background-color: rgba(255, 255, 255, 0.678); position: relative; margin-top: -30px;">
+        <div class="avatar-container" style="margin-left: 40px; margin-top: 20px; padding: 20px;">
+            <img class="avatar" onclick="document.location='profilepage.html'" src="Photos/Profile.png" alt="Avatar">
+            <button class="edit-button" onclick="uploadAvatar()">Edit</button>
+            <input type="file" id="avatar-input" accept="image/*" style="display: none;">
+
+        </div>
+        <script>
+            function uploadAvatar() {
+                document.getElementById('avatar-input').click();
+            }
+
+            document.getElementById('avatar-input').addEventListener('change', function () {
+                const file = this.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        document.querySelector('.avatar').src = e.target.result;
+                    }
+                    reader.readAsDataURL(file);
+                }
+            });
+        </script>
+
+        <script src="settings.js"></script>
+
+        <label class="switch" style="margin-left: 1200px; margin-top: -120;">
+            <input type="checkbox" onclick="toggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+
+        <script>
+            function toggleDarkMode() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+
+        <div class="profile-container">
+            <p
+                style="margin-top: -950px; margin-left: 290px; font-family: shrikhand; color: rgba(109, 34, 149, 0.721);">
+                Profile:</p>
+            <label for="profileNameInput" style="margin-left: 735px; margin-top: 730; height: 10px;"></label>
+            <input type="text" id="profileNameInput" placeholder="Enter your display name">
+            <span id="displayName" style="margin-bottom: -90px;">Username</span>
+
+            <form id="color-form" style="margin-left: -500px; margin-top: 70px; left: 40px; top: -50px; height: 400px; font-size: 20px; font-family: Cardo; color: #3b8ad0;">
+                <label for="color-pink">Pink</label>
+                <input type="radio" id="color-pink" name="color" value="#ffc0cb">
+                <label for="color-blue">Light Blue</label>
+                <input type="radio" id="color-blue" name="color" value="#bae6ff">
+                <label for="color-green">Mint Green</label>
+                <input type="radio" id="color-green" name="color" value="#c2f0f0">
+                <label for="color-pink">Thistle</label>
+                <input type="radio" id="color-Thistle" name="color" value="#CDB4DB">
+                <label for="color-pink">Cambridge blue</label>
+                <input type="radio" id="color-Cambridge blue" name="color" value="#A4C3B2">
+                <label for="color-pink">Papaya whip</label>
+                <input type="radio" id="color-Papaya whip" name="color" value="#FAEDCD">
+                <label for="color-pink">purple</label>
+                <input type="radio" id="color-purple" name="color" value="#CECCFA">
+                <button type="button" onclick="changeBackgroundColor()">Change Background</button>
+            </form>
+
+            <form id="color-form" style="margin-left: 40px; margin-top: 70px; height: 400px; font-size: 20px; font-family: Cardo; color: #3b8ad0;">
+                <label for="color-pink">Tea green</label>
+                <input type="radio" id="color-Tea green" name="color" value="#CCD5AE">
+                <label for="color-blue">Beige</label>
+                <input type="radio" id="color-Beige" name="color" value="#E9EDC9">
+                <label for="color-green">Cornsilk</label>
+                <input type="radio" id="color-Cornsilk" name="color" value="#FEFAE0">
+                <label for="color-pink">Desert sand</label>
+                <input type="radio" id="color-Desert sand" name="color" value="#E4C4A5">
+                <label for="color-pink">Tomato</label>
+                <input type="radio" id="color-Tomato" name="color" value="#EF6351">
+                <label for="color-pink">Salmon</label>
+                <input type="radio" id="color-Salmon" name="color" value="#F38375">
+                <label for="color-pink">Misty rose</label>
+                <input type="radio" id="color-Misty rose" name="color" value="#FFE3E0">
+                <button type="button" onclick="changeBackgroundColor()">Change Background</button>
+            </form>
+
+            <form id="color-form" style="margin-left: 40px; margin-top: 70px; height: 400px; font-size: 20px; font-family: Cardo; color: #3b8ad0;">
+                <label for="color-pink">Mauve</label>
+                <input type="radio" id="color-Mauve" name="color" value="#C8B6FF">
+                <label for="color-blue">Periwinkle</label>
+                <input type="radio" id="color-Periwinkle" name="color" value="#B8C0FF">
+                <label for="color-green">Celeste</label>
+                <input type="radio" id="color-Celeste" name="color" value="#C0FDFF">
+                <label for="color-pink">Columbia blue</label>
+                <input type="radio" id="color-Columbia blue" name="color" value="#C8E7FF">
+                <label for="color-pink">Jordy Blue</label>
+                <input type="radio" id="color-Jordy Blue" name="color" value="#ABC4FF">
+                <label for="color-pink">Flax</label>
+                <input type="radio" id="color-Flax" name="color" value="#FFEE9D">
+                <label for="color-pink">Sunglow</label>
+                <input type="radio" id="color-Sunglow" name="color" value="#FCCC5D">
+                <button type="button" onclick="changeBackgroundColor()">Change Background</button>
+            </form>
+
+            <div class="button8"
+            style=" margin-top: -220px; margin-bottom: 100px; margin-left: 55px; font-family: 'Shrikhand' "
+            onclick="history.back()">Back
+        </div>
+
+            <script>
+                function changeBackgroundColor() {
+                    const selectedColor = document.querySelector('input[name="color"]:checked').value;
+                    document.body.style.backgroundColor = selectedColor;
+                }
+            </script>
+
+            <textarea id="editable-bio" placeholder="This user is too lazy to leave anything"
+                style="margin-top: 160px; height: 100px; margin-left: 100px; margin-right: 20px; width: 370px;">
+            </textarea>
+
+
+        </div>
+
+    </div>
+
+    <div class="TextSettings">Settings</div>
+    <div class="Icons">
+        <img src="Photos/Settings.jpeg" alt="Avatar"
+            style="margin-left: 190px; margin-top: -75px; height: 80px; width: 80px;">
+    </div>
+    <div class="Pictureframe1" style="margin-top: 50px; position: relative;">
+        <div class="Cover" style="position: relative;">
+            <div class="ProfileCover">
+
+                <div class="avatar-container" style="margin-left: 100px; margin-top: -10px; padding: 20px;">
+                    <img class="avatar" onclick="document.location='profilepage.html'" src="Photos/Profile.png"
+                        alt="Avatar">
+                    <button class="edit-button" onclick="uploadAvatar()"
+                        style="margin-left: 1045px; margin-bottom: 255px;">Edit</button>
+                    <input type="file" id="avatar-input" accept="image/*" style="display: none;">
+                </div>
+
+                <button class="button1"
+                    style="height: 50px; width: 210px; font-family: 'Shrikhand'; margin-left: 90px; margin-top: 150px;"
+                    onclick="logout()">Log Out
+                </button>
+
+                <script>
+                    // Get elements
+                    var editableBio = document.getElementById("editable-bio");
+                    var saveBioButton = document.getElementById("save-bio");
+                    var userBio = document.getElementById("user-bio");
+                    var saveMessage = document.getElementById("save-message");
+
+                    // Event listener for Save Bio button
+                    saveBioButton.addEventListener("click", function () {
+                        // Get the content of the editable bio textarea
+                        var bioContent = editableBio.value.trim(); // Trim removes leading/trailing white spaces
+
+                        // Update the user bio with the edited content
+                        userBio.textContent = "Bio: " + bioContent;
+
+                        // Show save message
+                        saveMessage.classList.remove("hidden");
+
+                        // Hide save message after 3 seconds
+                        setTimeout(function () {
+                            saveMessage.classList.add("hidden");
+                        }, 3000);
+                    });
+                </script>
+
+                <script>
+                    function uploadAvatar() {
+                        document.getElementById('avatar-input').click();
+                    }
+
+                    document.getElementById('avatar-input').addEventListener('change', function () {
+                        const file = this.files[0];
+                        if (file) {
+                            const reader = new FileReader();
+                            reader.onload = function (e) {
+                                document.querySelector('.avatar').src = e.target.result;
+                            }
+                            reader.readAsDataURL(file);
+                        }
+                    });
+                </script>
+
+                <script src="settings.js"></script>
+            </div>
+        </div>
+    </div>
+</body>

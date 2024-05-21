@@ -1,0 +1,191 @@
+<html>
+
+<head>
+    <title>Artist Info</title>
+    <link rel="stylesheet" href="explorelibrary.css">
+    <link rel="shortcut icon" href="Photos/Logo ArtBeat blue.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
+    <link href='https://fonts.google.com/specimen/Alice?query=Alice' rel='stylesheet'>
+    <link href='https://fonts.google.com/specimen/Cardo?query=cardo' rel='stylesheet'>
+</head>
+
+<body>
+
+
+    <div class="box flex-container"
+        style="background-color: rgba(151, 203, 255, 0.771); width: 79.9%; margin-left: 304px; margin-top: -42px; position: fixed;">
+
+        <form>
+            <input type="text" name="search" placeholder="Search.."
+                style="margin-top: 25px; margin-left: 65px; position: relative;">
+        </form>
+
+        <a href="#" class="fa fa-vimeo" style="margin-right: -900px; margin-top: 15px; height: 30px; width: 30px; ">
+            <div class="Icons">
+                <img src="Photos/bell.jpeg" alt="Avatar"
+                    style="margin-left: -15px; margin-top: -15px; width: 60px; height: 60px; "
+                    onclick="document.location='notification.html'">
+            </div>
+        </a>
+
+        <div class="Icons">
+            <img src="Photos/search.jpg" alt="Avatar"
+                style="margin-left: -2155px; margin-top: 10px; width: 60px; height: 60px; position: relative ">
+        </div>
+
+    </div>
+
+
+    <div class="sticky" style="position: fixed; margin-bottom: 15px; ">
+        <div> <img src="Photos/artbeat logo horizontal.png"
+                style="width: 160px; height: 100px; margin-top: 300px; margin-left: 65px; position: fixed;">
+        </div>
+
+        <div class="Cover" style="height: 301px; width: 300px;"></div>
+
+        <!-- Placeholder for the dynamic profile name display -->
+        <div id="displayName"
+            style="font-family: shrikhand; color: rgb(142, 80, 199); margin-left: 60px; margin-top: -60px; font-size: 30px;">
+            Username
+        </div>
+
+        <div class="button5"
+            style="margin-left: 30px; margin-top: 150px;  margin-bottom: 30px; font-family: 'Shrikhand' "
+            onclick="document.location='index.html'">Home
+        </div>
+
+
+        <div class="button6" style="margin-left: 30px; margin-bottom: 30px;  font-family: 'Shrikhand' "
+            onclick="document.location='exploresearch.html'">Explore
+        </div>
+
+        <div class="button7" style="margin-left: 30px; margin-bottom: 30px; font-family: 'Shrikhand' "
+            onclick="document.location='artist.html'">Artist
+        </div>
+
+        <div class="button8" style="margin-left: 30px; margin-bottom: 30px; font-family: 'Shrikhand' "
+            onclick="document.location='explorelibrary.html'">Library
+        </div>
+
+        <div class="button9" style="margin-left: 30px; margin-bottom: 30px; font-family: 'Shrikhand' "
+            onclick="document.location='userlibrary.html'">Create Playlist
+
+        </div>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Get the input field and display name element
+                const profileNameInput = document.getElementById("profileNameInput");
+                const displayName = document.getElementById("displayName");
+
+                // Function to update the display name
+                function updateDisplayName() {
+                    displayName.textContent = profileNameInput.value;
+                }
+
+                // Initial display name update
+                updateDisplayName();
+
+                // Event listener for input field changes
+                profileNameInput.addEventListener("input", updateDisplayName);
+            });
+        </script>
+
+    </div>
+    </div>
+
+    <div class="avatar-container" style="margin-left: 40px; margin-top: 50px; padding: 20px;">
+        <img class="avatar" onclick="document.location='profilepage.html'" src="Photos/Profile.png" alt="Avatar">
+        <button class="edit-button" onclick="uploadAvatar()" style="margin-right: 70px;">Edit</button>
+        <input type="file" id="avatar-input" accept="image/*" style="display: none;">
+    </div>
+
+
+    <script>
+        function uploadAvatar() {
+            document.getElementById('avatar-input').click();
+        }
+
+        document.getElementById('avatar-input').addEventListener('change', function () {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.querySelector('.avatar').src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+
+    <div class="container" style="margin-left: 300px; margin-top: -100px;">
+        <div class="painting">
+            <a href="https://www.britannica.com/topic/The-Scream-by-Munch">
+                <img src="Photos/the scream.jpeg" alt="Painting 1">
+            </a>
+            <div class="painting-name">The Scream</div>
+        </div>
+        <div class="painting">
+            <a href="https://www.britannica.com/topic/Mona-Lisa-painting">
+                <img src="Photos/monalisa.jpeg" alt="Painting 2">
+            </a>
+            <div class="painting-name">Mona Lisa</div>
+        </div>
+        <div class="painting">
+            <a href="https://www.britannica.com/topic/Girl-with-a-Pearl-Earring-by-Vermeer">
+                <img src="Photos/girl with the pearl earing.jpeg" alt="Painting 3">
+            </a>
+            <div class="painting-name">Girl with a pearl earrings</div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-left: 285px;">
+        <div class="painting2">
+            <a href="https://www.wikiart.org/en/claude-monet/san-giorgio-maggiore-at-dusk">
+                <img src="Photos/San Giorgio Maggiore at Dusk.jpeg" alt="Painting 1">
+            </a>
+            <div class="painting-name">San Giorgio Maggiore at Dusk</div>
+        </div>
+        <div class="painting2">
+            <a href="https://www.britannica.com/topic/The-Starry-Night">
+                <img src="Photos/starry night.jpeg" alt="Painting 2">
+            </a>
+            <div class="painting-name">The Starry Night</div>
+        </div>
+        <div class="painting2">
+            <a href="https://www.britannica.com/topic/Last-Supper-fresco-by-Leonardo-da-Vinci">
+                <img src="Photos/Last Supper.jpeg" alt="Painting 3">
+            </a>
+            <div class="painting-name">Last Supper</div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-left: 285px;">
+        <div class="painting3">
+            <a href="https://www.artble.com/artists/pierre-auguste_renoir/paintings/dance_at_le_moulin_de_la_galette">
+                <img src="Photos/Dance at Le Moulin de la Galette.jpeg" alt="Painting 1">
+            </a>
+            <div class="painting-name">Dance at Le Moulin de la Galette</div>
+        </div>
+        <div class="painting3">
+            <a href="https://fr.wikipedia.org/wiki/Les_Forges_de_Vulcain">
+                <img src="Photos/Les Forges de Vulcain.jpeg" alt="Painting 2">
+            </a>
+            <div class="painting-name">Les Forges de Vulcain</div>
+        </div>
+        <div class="painting3">
+            <a href="https://www.wikiart.org/en/john-collier/lady-godiva-1897">
+                <img src="Photos/Lady Godiva.jpeg" alt="Painting 3">
+            </a>
+            <div class="painting-name">Lady Godiva</div>
+        </div>
+        <div class="painting3">
+            <a href="https://www.artesvelata.it/riposo-caravaggio/">
+                <img src="Photos/riposo durante la fuga in Egitto.jpeg" alt="Painting 3">
+            </a>
+            <div class="painting-name">riposo durante la fuga in Egitto</div>
+        </div>
+    </div>
+
+</body>

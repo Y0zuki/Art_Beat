@@ -6,8 +6,8 @@ body {
 }
 
 .box {
-  background: rgba(255, 255, 255, 0.575);
-  height: 100px;
+  background: rgba(255, 255, 255, 0.381);
+  height: 200px;
   margin-bottom: -100px;
   position: relative;
   z-index: 210;
@@ -60,8 +60,7 @@ body {
 }
 
 .flex-container>div {
-  width: 100px;
-  margin: 10px;
+  margin: 40px;
   text-align: center;
   line-height: 75px;
   font-size: 30px;
@@ -183,13 +182,132 @@ body {
   transition: 0s
 }
 
-.ReadMore {
-  background-color: #ffffff84;
-  height: 1000px;
+
+.Icons {
+  img {
+    border-radius: 50%;
+    width: 120px;
+  }
 }
 
-.TextStyle {
-  color: #030304;
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
   text-align: center;
-  font-size: 60px;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-vimeo {
+  background: #5bc3ff;
+  color: white;
+}
+
+.Cover {
+  background-color: rgba(118, 71, 168, 0.349);
+  position: sticky;
+  position: relative;
+}
+
+.label {
+  background-color: rgba(151, 203, 255, 0.771);
+  width: 400px;
+  padding: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: #5b66c8;
+}
+
+.avatar-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /* Make the profile container round */
+  overflow: hidden;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  /* Make the avatar round */
+}
+
+.edit-button {
+  position: absolute;
+  bottom: 35px;
+  left: 110px;
+  color: #ffffffd3;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.playlist {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgb(78, 137, 255);
+  background-color: #5b66c894;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.playlist h2 {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ffefa2;
+  padding-bottom: 5px;
+}
+
+.playlist-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.playlist-form label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.playlist-songs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.playlist-songs li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ffefa2;
+  cursor: pointer;
+  /* Add hover effect for a nicer look */
+}
+
+.playlist-songs li:hover {
+  background-color: #334ccb;
 }

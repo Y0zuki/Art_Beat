@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Notication</title>
+    <link rel="stylesheet" href="notification.css">
+    <link rel="stylesheet" href="notification.js">
+    <link rel="shortcut icon" href="Photos/Logo ArtBeat blue.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
+    <link href='https://fonts.google.com/specimen/Alice?query=Alice' rel='stylesheet'>
+    <link href='https://fonts.google.com/specimen/Cardo?query=cardo' rel='stylesheet'>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="box flex-container"
+        style="background-color: rgba(151, 203, 255, 0.771); width: 98.8%; padding: 10px; position: relative;">
+        <div class="button8"
+            style=" margin-top: 30px; margin-left: 1230px; font-family: 'Shrikhand' "
+            onclick="history.back()">Back
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 70px;">
+        <h1>Music Notifications</h1>
+
+        <h2>New Song Releases</h2>
+        <ul id="songReleaseList">
+            <!-- New song releases will be added here dynamically -->
+        </ul>
+
+        <h2>Artist Note</h2>
+        <ul id="botNotificationList">
+
+        </ul>
+
+        <button id="clearNotifications">Clear Notifications</button>
+    </div>
+
+    <script src="notification.js"></script>
+
+
+
+</body>

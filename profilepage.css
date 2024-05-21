@@ -3,17 +3,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-
-.box {
-    background: rgba(255, 255, 255, 0.575);
-    height: 100px;
+  }
+  
+  .box {
+    background: rgba(255, 255, 255, 0.381);
+    height: 200px;
     margin-bottom: -100px;
     position: relative;
     z-index: 210;
-}
+  }
 
-.button1 {
+  .button1 {
     position: relative;
     background-color: rgba(193, 172, 222, 0.688);
     border: rgba(177, 131, 190, 0.431);
@@ -30,9 +30,9 @@ body {
     overflow: hidden;
     cursor: pointer;
     /*height: 50px;*/
-}
-
-.button1:after {
+  }
+  
+  .button1:after {
     content: "";
     background: #ffffff;
     display: block;
@@ -43,31 +43,30 @@ body {
     margin-top: -120%;
     opacity: 0;
     transition: all 0.8s
-}
-
-.button1:active:after {
+  }
+  
+  .button1:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s
-}
-
-.flex-container {
+  }
+  
+  .flex-container {
     display: flex;
     justify-content: right;
     justify-content: space-between;
-
-}
-
-.flex-container>div {
-    width: 100px;
-    margin: 10px;
+  
+  }
+  
+  .flex-container>div {
+    margin: 40px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
-}
-
-.button2 {
+  }
+  
+  .button2 {
     position: relative;
     background-color: rgba(193, 172, 222, 0.688);
     border: rgba(177, 131, 190, 0.431);
@@ -83,9 +82,9 @@ body {
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
-}
-
-.button2:after {
+  }
+  
+  .button2:after {
     content: "";
     background: #ffffff;
     display: block;
@@ -96,16 +95,16 @@ body {
     margin-top: -120%;
     opacity: 0;
     transition: all 0.8s
-}
-
-.button2:active:after {
+  }
+  
+  .button2:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s
-}
-
-.button3 {
+  }
+  
+  .button3 {
     position: relative;
     background-color: rgba(193, 172, 222, 0.688);
     border: rgba(177, 131, 190, 0.431);
@@ -121,9 +120,9 @@ body {
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
-}
-
-.button3:after {
+  }
+  
+  .button3:after {
     content: "";
     background: #ffffff;
     display: block;
@@ -134,16 +133,16 @@ body {
     margin-top: -120%;
     opacity: 0;
     transition: all 0.8s
-}
-
-.button3:active:after {
+  }
+  
+  .button3:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s
-}
-
-.button4 {
+  }
+  
+  .button4 {
     position: relative;
     background-color: rgba(193, 172, 222, 0.688);
     border: rgba(177, 131, 190, 0.431);
@@ -160,10 +159,10 @@ body {
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
-
-}
-
-.button4:after {
+  
+  }
+  
+  .button4:after {
     content: "";
     background: #ffffff;
     display: block;
@@ -174,22 +173,81 @@ body {
     margin-top: -120%;
     opacity: 0;
     transition: all 0.8s
-}
-
-.button4:active:after {
+  }
+  
+  .button4:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s
-}
+  }
+  
 
-.ReadMore {
-    background-color: #ffffff84;
-    height: 2350px;
-}
-
-.TextStyle {
-    color: #8f75b1;
+  .Icons {
+    img {
+      border-radius: 50%;
+      width: 120px;
+    }
+  }
+  
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
     text-align: center;
-    font-size: 60px;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-vimeo {
+    background: #5bc3ff;
+    color: white;
+  }
+  
+  .Cover {
+    background-color: rgba(118, 71, 168, 0.349);
+    position: sticky;
+    position: relative;
+  }
+  
+  .label {
+    background-color: rgba(151, 203, 255, 0.771);
+    width: 400px;
+    padding: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: #5b66c8;
+  }
+  
+  .avatar-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make the profile container round */
+    overflow: hidden;
+  }
+  
+  .avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* Make the avatar round */
 }
+  
+  .edit-button {
+    position: absolute;
+    bottom: 35px;
+    left: 110px;
+    color: #ffffffd3;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  

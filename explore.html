@@ -1,0 +1,689 @@
+<html>
+
+<head>
+    <title>Explore</title>
+    <link rel="stylesheet" href="explore.css">
+    <link rel="shortcut icon" href="Photos/Logo ArtBeat blue.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
+    <link href='https://fonts.google.com/specimen/Alice?query=Alice' rel='stylesheet'>
+    <link href='https://fonts.google.com/specimen/Cardo?query=cardo' rel='stylesheet'>
+</head>
+
+<body>
+
+
+    <div class="box flex-container"
+        style="background-color: rgba(151, 203, 255, 0.771); width: 79.9%; margin-left: 296px; margin-top: -23px; position: fixed;">
+
+        <form>
+            <input type="text" name="search" placeholder="Search.."
+                style="margin-top: 25px; margin-left: 65px; position: relative;">
+        </form>
+
+        <a href="#" class="fa fa-vimeo" style="margin-right: -900px; margin-top: 15px; height: 30px; width: 30px; ">
+            <div class="Icons">
+                <img src="Photos/bell.jpeg" alt="Avatar"
+                    style="margin-left: -15px; margin-top: -15px; width: 60px; height: 60px; "
+                    onclick="document.location='notification.html'">
+            </div>
+        </a>
+
+        <div class="Icons">
+            <img src="Photos/search.jpg" alt="Avatar"
+                style="margin-left: -2155px; margin-top: 10px; width: 60px; height: 60px; position: relative ">
+        </div>
+
+    </div>
+
+
+    <div class="sticky" style="position: fixed; margin-bottom: 15px; ">
+        <div> <img src="Photos/artbeat logo horizontal.png" style="width: 160px; height: 100px; margin-top: 300px; margin-left: 65px; position: fixed;">
+        </div>
+
+        <div class="Cover" style="height: 301px; width: 300px;"></div>
+
+        <!-- Placeholder for the dynamic profile name display -->
+        <div id="displayName"
+            style="font-family: shrikhand; color: rgb(142, 80, 199); margin-left: 60px; margin-top: -60px; font-size: 30px;">
+            Username
+        </div>
+
+        <div class="button5"
+            style="margin-left: 30px; margin-top: 150px;  margin-bottom: 30px; font-family: 'Shrikhand' "
+            onclick="document.location='index.html'">Home
+        </div>
+
+
+        <div class="button6" style="margin-left: 30px; margin-bottom: 30px;  font-family: 'Shrikhand' "
+            onclick="document.location='exploresearch.html'">Explore
+        </div>
+
+        <div class="button7" style="margin-left: 30px; margin-bottom: 30px; font-family: 'Shrikhand' "
+            onclick="document.location='artist.html'">Artist
+        </div>
+
+        <div class="button8" style="margin-left: 30px; margin-bottom: 30px; font-family: 'Shrikhand' "
+            onclick="document.location='explorelibrary.html'">Library
+        </div>
+
+        <div class="button9" style="margin-left: 30px; margin-bottom: 30px; font-family: 'Shrikhand' "
+            onclick="document.location='userlibrary.html'">Create Playlist
+
+        </div>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Get the input field and display name element
+                const profileNameInput = document.getElementById("profileNameInput");
+                const displayName = document.getElementById("displayName");
+
+                // Function to update the display name
+                function updateDisplayName() {
+                    displayName.textContent = profileNameInput.value;
+                }
+
+                // Initial display name update
+                updateDisplayName();
+
+                // Event listener for input field changes
+                profileNameInput.addEventListener("input", updateDisplayName);
+            });
+        </script>
+
+    </div>
+    </div>
+
+    <div class="avatar-container" style="margin-left: 40px; margin-top: 30px; padding: 20px;">
+        <img class="avatar" onclick="document.location='profilepage.html'" src="Photos/Profile.png" alt="Avatar">
+        <button class="edit-button" onclick="uploadAvatar()" style="margin-right: 70px;">Edit</button>
+        <input type="file" id="avatar-input" accept="image/*" style="display: none;">
+    </div>
+
+
+    <script>
+        function uploadAvatar() {
+            document.getElementById('avatar-input').click();
+        }
+
+        document.getElementById('avatar-input').addEventListener('change', function () {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.querySelector('.avatar').src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+
+    <div class="label" style="margin-left: 330px; margin-top: -110px; font-family: shrikhand;">
+        MUSIC TO GET STARTED
+    </div>
+
+    <div class="Icons-2">
+        <div class="artist" style="margin-left: -700px; margin-top: 10px;">
+            <a href="https://music.youtube.com/watch?v=LqORo58AIlo&si=Tbhd9LkUVXPM4YuZ">
+                <img style="margin-top: -0px;" src="Photos/Demon.jpeg" alt="Avatar">
+            </a>
+            <span class="icon-name"
+                style="font-family: Alice; font-size: 25px; margin-left: 300px; margin-top: -100px; ">Demons Banquet
+                <br>
+                <span class="author" style="margin-left: 20px; font-size: 15px; ">By 友成空 TOMONARI SORA</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="artist" style="margin-left: -700px; margin-top: 45px;">
+        <a href="https://music.youtube.com/watch?v=pgXpM4l_MwI&si=_aMOr7_CtCV2GtyE">
+            <img style="margin-top: -0px;" src="Photos/Show.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 190px; margin-top: -100px; ">Show
+            <br>
+            <span class="author" style="margin-left: -6px; font-size: 15px; ">By Ado</span>
+        </span>
+    </div>
+
+    <div class="artist" style="margin-left: -700px; margin-top: 50px;">
+        <a href="https://music.youtube.com/watch?v=Uh6dkL1M9DM&si=m9WPXNLULWpcRgqc">
+            <img style="margin-top: -0px;" src="Photos/Flamingo.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 225px; margin-top: -100px; ">Flamingo 
+            <br>
+            <span class="author" style="margin-left: 20px; font-size: 15px; ">By Kenshi Yonezu</span>
+        </span>
+    </div>
+    
+    <div class="artist" style="margin-top: -270px;">
+        <a href="https://music.youtube.com/watch?v=3tJUflhYIpo&si=4JhYsfZQKgaVk0ug">
+            <img style="margin-top: -0px;" src="Photos/起風了.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 200px; margin-top: -100px; ">起风了
+            <br>
+            <span class="author" style="margin-left: -20px; font-size: 15px; ">By 周深</span>
+        </span>
+    </div>
+
+    <div class="artist" style="margin-top: 35px;">
+        <a href="https://music.youtube.com/watch?v=AUlcQ92Wa5s&si=uRBh160kJmy6_Pac">
+            <img style="margin-top: -0px;" src="Photos/半山腰.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 200px; margin-top: -100px; ">半山腰 
+            <br>
+            <span class="author" style="margin-left: 0px; font-size: 15px; ">By zic子晨</span>
+        </span>
+    </div>
+
+    <div class="artist" style="margin-top: 35px;">
+        <a href="https://music.youtube.com/watch?v=A8N_sQ_kK48&si=T3_xoFVPW_lkwvj6">
+            <img style="margin-top: -0px;" src="Photos/那女孩对我说.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 280px; margin-top: -100px; ">那女孩对我说
+            <br>
+            <span class="author" style="margin-left: -80px; font-size: 15px; ">By 黄義達</span>
+        </span>
+    </div>
+
+    <div class="artist" style=" margin-left: 800; margin-top: -280px;">
+        <a href="https://music.youtube.com/watch?v=Bd-2-9MOO68&si=6KjY5PC7VgouwJUq">
+            <img style="margin-top: -0px;" src="Photos/self control.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 250px; margin-top: -100px; ">Self Control
+            <br>
+            <span class="author" style="margin-left: -25px; font-size: 15px; ">By Bebe Rexha</span>
+        </span>
+    </div>
+
+    <div class="artist" style=" margin-left: 800; margin-top: 50px;">
+        <a href="https://music.youtube.com/watch?v=d2EpAT8i008&si=UVXP6fhAeTQBDQMS">
+            <img style="margin-top: -0px;" src="Photos/primadonna girl.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 300px; margin-top: -100px; ">Primadonna Girl
+            <br>
+            <span class="author" style="margin-left: -75px; font-size: 15px; ">By MARIANA</span>
+        </span>
+    </div>
+
+    <div class="artist" style=" margin-left: 800; margin-top: 50px;">
+        <a href="https://music.youtube.com/watch?v=5tAS_-eGbHY&si=Q6XirQLccVIBUu4Q">
+            <img style="margin-top: -0px;" src="Photos/devil lullaby.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 280px; margin-top: -100px; ">Devil's lullaby
+            <br>
+            <span class="author" style="margin-left: -65px; font-size: 15px; ">By Jim Yosef</span>
+        </span>
+    </div>
+
+    <div class="label" style="margin-left: 330px; margin-top: 55px; font-family: shrikhand;">
+        RECOMMENDATION
+    </div>
+
+    <div class="Icons-2">
+        <div class="artist" style="margin-left: -550px; margin-top: 20px;">
+            <a href="https://music.youtube.com/watch?v=xy8HNniRsc4&si=NnU09QjKfg41QaQM">
+                <img style="height: 200px; width: 200px;" src="Photos/under.jpeg" alt="Avatar">
+            </a>
+            <span class="icon-name"
+                style="font-family: Alice; font-size: 25px; margin-left: 5px; margin-top: -10px; ">Under the Influence
+                <br>
+                <span class="author" style="margin-left: 10px; font-size: 15px; ">By Chris Brown</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="Icons-2">
+        <div class="artist" style="margin-left: -40px; margin-top: -283px;">
+            <a href="https://music.youtube.com/watch?v=C0z8YMAMeBk&si=s46Pa6x3DnrnlwJK">
+                <img style="height: 200px; width: 200px;" src="Photos/something blue.jpeg" alt="Avatar">
+            </a>
+            <span class="icon-name"
+                style="font-family: Alice; font-size: 25px; margin-left: 5px; margin-top: -10px; ">Something Blue 
+                <br>
+                <span class="author" style="margin-left: 10px; font-size: 15px; ">By Voila</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="Icons-2">
+        <div class="artist" style="margin-left: 470px; margin-top: -313px;">
+            <a href="https://music.youtube.com/watch?v=dtN5DJ9Gvh4&si=-O6jmls8hZekPB6n">
+                <img style="height: 200px; width: 200px;" src="Photos/overdose.jpeg" alt="Avatar">
+            </a>
+            <span class="icon-name"
+                style="font-family: Alice; font-size: 25px; margin-left: 5px; margin-top: -10px; ">Overdose
+                <br>
+                <span class="author" style="margin-left: 10px; font-size: 15px; ">By Natori</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="Icons-2">
+        <div class="artist" style="margin-left: 980px; margin-top: -343px;">
+            <a href="https://music.youtube.com/watch?v=ghpn99s8I-U&si=z8ILZ3zeunPAXNGu">
+                <img style="height: 200px; width: 200px;" src="Photos/villain.jpeg" alt="Avatar">
+            </a>
+            <span class="icon-name"
+                style="font-family: Alice; font-size: 25px; margin-left: 5px; margin-top: -10px; ">Villain 
+                <br>
+                <span class="author" style="margin-left: 10px; font-size: 15px; ">By Stella Jang</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="label" style="margin-left: 330px; margin-top: -105px; font-family: shrikhand;">
+        TRENDING SONGS
+    </div>
+
+    <div class="shelf-container" style="height: 400px; width: 1200px; margin-left: 320px;">
+        <div class="shelf">
+            <div class="book front" style="width: 260px; height: 300px; margin-top: 20px;">
+                <a href="https://music.youtube.com/watch?v=3zh9Wb1KuW8&si=U0zhj8UOlFE8M0O8">
+                    <img src="Photos/shinunga.jpeg" alt="Book 1 Cover">
+                </a>
+                <h2 style="font-family: 'Alice'; font-size: 20px; margin-top: 0px; color: #6a35b0ae;">Shinunoga E-Wa</h2>
+                <p>Fujii Kate</p>
+            </div>
+
+        </div>
+
+        <div class="shelf">
+            <div class="book front" style="width: 260px; height: 300px; margin-top: 20px;">
+                <a href="https://music.youtube.com/watch?v=0t0HtFYjcU8&si=t_618Qp5lxphQKx3">
+                    <img src="Photos/night dancer.jpeg" alt="Book 2 Cover">
+                </a>
+                <h2 style="font-family: 'Alice'; font-size: 20px; margin-top: 0px; color: #6a35b0ae;">Night Dancer</h2>
+                <p>By Imase </p>
+            </div>
+        </div>
+
+        <div class="shelf">
+            <div class="book front" style="width: 260px; height: 300px; margin-top: 20px;">
+                <a href="https://music.youtube.com/watch?v=Jg73p9udbAQ&si=lMPpuRib2lXXWlER">
+                    <img src="Photos/bing bang bang born.jpeg" alt="Book 2 Cover">
+                </a>
+                <h2 style="font-family: 'Alice'; font-size: 20px; margin-top: 0px; color: #6a35b0ae;">Bling-Bang-Bang-Born
+                </h2>
+                <p>By Creepy Nuts</p>
+            </div>
+        </div>
+
+        <div class="shelf">
+            <div class="book front" style="width: 290px; height: 300px; margin-top: 20px;">
+                <a href="https://music.youtube.com/watch?v=za8FiI0WH5g&si=N2RC85WtD0aOiqFc">
+                    <img src="Photos/kusarikitta.jpeg" alt="Book 2 Cover">
+                </a>
+                <h2 style="font-family: 'Alice'; font-size: 20px; margin-top: 0px; color: #6a35b0ae;">Kusarikitta Zinseida </h2>
+                <p>By Takayan</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="artist.js"></script>
+    </div>
+
+    <div class="shelf-container" style="height: 400px; width: 1200px; margin-left: 320px;">
+        <div class="shelf">
+            <div class="book front" style="width: 260px; height: 300px; margin-top: 20px;">
+                <a href="https://music.youtube.com/watch?v=6zNHZkT3DXk&si=znEaN1lHvIwpIjYn">
+                    <img src="Photos/devil doesnt bargin.jpeg" alt="Book 1 Cover">
+                </a>
+                <h2 style="font-family: 'Alice'; font-size: 20px; margin-top: 0px; color: #6a35b0ae;">Devil Doesn't Bargain</h2>
+                <p>By Alec Benjamin </p>
+            </div>
+
+        </div>
+
+        <div class="shelf">
+            <div class="book front" style="width: 260px; height: 300px; margin-top: 20px;">
+                <a href="https://music.youtube.com/watch?v=HMqhXxH5-RQ&si=6iXY9dQnZBcSUnY1">
+                    <img src="Photos/matsuri.jpeg" alt="Book 2 Cover">
+                </a>
+                <h2 style="font-family: 'Alice'; font-size: 20px; margin-top: 0px; color: #6a35b0ae;">Matsuri</h2>
+                <p>Fujii Kate</p>
+            </div>
+        </div>
+
+        <div class="shelf">
+            <div class="book front" style="width: 260px; height: 300px; margin-top: 20px;">
+                <a href="https://music.youtube.com/watch?v=aC9HkZW2hZk&si=OXGBPWjLMdnLZftm">
+                    <img src="Photos/cruel.jpeg" alt="Book 2 Cover">
+                </a>
+                <h2 style="font-family: 'Alice'; font-size: 20px; margin-top: 0px; color: #6a35b0ae;">Cruel Summer
+                </h2>
+                <p>By Taylor Swift </p>
+            </div>
+        </div>
+
+        <div class="shelf">
+            <div class="book front" style="width: 290px; height: 300px; margin-top: 20px;">
+                <a href="https://music.youtube.com/watch?v=_QtN6qocpKU&si=kmNm2oVNC1CM6Tm_">
+                    <img src="Photos/greedy.jpeg" alt="Book 2 Cover">
+                </a>
+                <h2 style="font-family: 'Alice'; font-size: 20px; margin-top: 0px; color: #6a35b0ae;">Greedy</h2>
+                <p>By Tate McRae</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="label" style="margin-left: 330px; margin-top: 10px; font-family: shrikhand;">
+        MUSIC YOU MIGHT LIKE
+    </div>
+
+    <div class="Icons-2">
+        <div class="artist" style="margin-left: -700px; margin-top: 10px;">
+            <a href="https://music.youtube.com/watch?v=HZbsLxL7GeM&si=BCfe-vHY6otsqDcu">
+                <img style="margin-top: -0px;" src="Photos/dandelion.jpeg" alt="Avatar">
+            </a>
+            <span class="icon-name"
+                style="font-family: Alice; font-size: 25px; margin-left: 230px; margin-top: -100px; ">Dandelion 
+                <br>
+                <span class="author" style="margin-left: -35px; font-size: 15px; ">By Ruth B.</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="artist" style="margin-left: -700px; margin-top: 45px;">
+        <a href="https://music.youtube.com/watch?v=pbDKb311Zrg&si=md-iO3i0mGyguJv2">
+            <img style="margin-top: -0px;" src="Photos/tattoo.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 190px; margin-top: -100px; ">Tattoo 
+            <br>
+            <span class="author" style="margin-left: 5px; font-size: 15px; ">By Loreen</span>
+        </span>
+    </div>
+
+    <div class="artist" style="margin-left: -700px; margin-top: 50px;">
+        <a href="hhttps://music.youtube.com/watch?v=K0yDvd0V9wA&si=SbbiCBJf8MqRpi5f">
+            <img style="margin-top: -0px;" src="Photos/panic room.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 255px; margin-top: -100px; ">Panic Room 
+            <br>
+            <span class="author" style="margin-left: -60px; font-size: 15px; ">By Au/Ra
+            </span>
+        </span>
+    </div>
+    
+    <div class="artist" style="margin-top: -265px;">
+        <a href="https://music.youtube.com/watch?v=f8IqVtY_4jo&si=eqYGOIhp2KxrDkOy">
+            <img style="margin-top: -0px;" src="Photos/光年之外.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 230px; margin-top: -100px; ">光年之外
+            <br>
+            <span class="author" style="margin-left: 20px; font-size: 15px; ">By G.E.M 鄧佩儀</span>
+        </span>
+    </div>
+
+    <div class="artist" style="margin-top: 35px;">
+        <a href="https://music.youtube.com/watch?v=na_xv5iFt2Y&si=1wBbUs0wsFtgwLhu">
+            <img style="margin-top: -0px;" src="Photos/魔鬼中的天使.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 280px; margin-top: -100px; ">魔鬼中的天使
+            <br>
+            <span class="author" style="margin-left: -80px; font-size: 15px; ">By 田馥甄</span>
+        </span>
+    </div>
+
+    <div class="artist" style="margin-top: 35px;">
+        <a href="https://music.youtube.com/watch?v=FWtbGkpdoP4&si=AwJ8kIHAK2t5ccJc">
+            <img style="margin-top: -0px;" src="Photos/来自天堂的魔鬼AWAY.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 380px; margin-top: -100px; ">来自天堂的魔鬼 AWAY
+            <br>
+            <span class="author" style="margin-left: -130px; font-size: 15px; ">By G.E.M 鄧佩儀
+            </span>
+        </span>
+    </div>
+
+    <div class="artist" style=" margin-left: 800; margin-top: -280px;">
+        <a href="https://music.youtube.com/watch?v=YZ3Qol8W9rI&si=B7Sr2SCiA_at3jBt">
+            <img style="margin-top: -0px;" src="Photos/Six Pills.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 210px; margin-top: -100px; ">Six pills
+            <br>
+            <span class="author" style="margin-left: 9px; font-size: 15px; ">By Rosendale </span>
+        </span>
+    </div>
+
+    <div class="artist" style=" margin-left: 800; margin-top: 50px;">
+        <a href="https://music.youtube.com/watch?v=B0WvhTylJOI&si=zUQTUg09wKsVAqH4">
+            <img style="margin-top: -0px;" src="Photos/loveit.jpg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 210px; margin-top: -100px; ">Loveit?
+            <br>
+            <span class="author" style="margin-left: 10px; font-size: 14px; ">By ZERA and biz <br> (feat LOLUET)</span>
+        </span>
+    </div>
+
+    <div class="artist" style=" margin-left: 800; margin-top: 35px;">
+        <a href="https://music.youtube.com/watch?v=uV_5eEvamoQ&si=W8Tbn63QVXMc-rUp">
+            <img style="margin-top: -0px;" src="Photos/Golden Hour.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 23px; margin-left: 250px; margin-top: -100px; ">Golden Hour
+            <br>
+            <span class="author" style="margin-left: -15px; font-size: 15px; ">By Golden Hour</span>
+        </span>
+    </div>
+
+    <div class="label" style="margin-left: 330px; margin-top: 60px; font-family: shrikhand;">
+        ALBUM
+    </div>
+
+    <div class="shelf-container" style="height: 400px; width: 1200px; margin-left: 320px;">
+        <div class="shelf">
+            <div class="book front" style="width: 260px; height: 300px; margin-top: 20px;">
+                <a href="https://music.youtube.com/channel/UCPC0L1d253x-KuMNwa05TpA?si=5jsTtnbKpyuYHtHM">
+                    <img src="Photos/taylor swift.jpeg" alt="Book 1 Cover">
+                </a>
+                <h2 style="font-family: 'Alice'; font-size: 20px; margin-top: 0px; color: #6a35b0ae;">Taylor Swift</h2>
+            </div>
+        </div>
+
+        <div class="shelf">
+            <div class="book front" style="width: 260px; height: 300px; margin-top: 20px;">
+                <a href="https://music.youtube.com/channel/UCzQ1356FA08gCEDg3i6eJhQ?si=YD1DL6CIC0PCfRzR">
+                    <img src="Photos/rosendale.jpeg" alt="Book 2 Cover">
+                </a>
+                <h2 style="font-family: 'Alice'; font-size: 20px; margin-top: 0px; color: #6a35b0ae;">Rosendale</h2>
+            </div>
+        </div>
+
+        <div class="shelf">
+            <div class="book front" style="width: 260px; height: 300px; margin-top: 20px;">
+                <a href="https://music.youtube.com/channel/UCERrDZ8oN0U_n9MphMKERcg?si=2lTqr6c2s5qilzhL">
+                    <img src="Photos/billiealbum.jpeg" alt="Book 2 Cover">
+                </a>
+                <h2 style="font-family: 'Alice'; font-size: 20px; margin-top: 0px; color: #6a35b0ae;">Billie Eilish
+                </h2>
+            </div>
+        </div>
+
+        <div class="shelf">
+            <div class="book front" style="width: 290px; height: 300px; margin-top: 20px;">
+                <a href="https://music.youtube.com/channel/UC0aXrjVxG5pZr99v77wZdPQ?si=tDiP10xBTLG-HD9m">
+                    <img src="Photos/imagine dragon.jpeg" alt="Book 2 Cover">
+                </a>
+                <h2 style="font-family: 'Alice'; font-size: 20px; margin-top: 0px; color: #6a35b0ae;">Imagine Dragon</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="label" style="margin-left: 330px; margin-top: -10px; font-family: shrikhand;">
+        NEW RELEASES
+    </div>
+
+    <div class="Icons-2">
+        <div class="artist" style="margin-left: -700px; margin-top: 10px;">
+            <a href="https://music.youtube.com/watch?v=eleP7yc9dSY&si=LD3Tg69Y1X-Y2GyR">
+                <img style="margin-top: -0px;" src="Photos/epresso.jpeg" alt="Avatar">
+            </a>
+            <span class="icon-name"
+                style="font-family: Alice; font-size: 25px; margin-left: 220px; margin-top: -100px; ">Expresso
+                <br>
+                <span class="author" style="margin-left: 40px; font-size: 15px; ">By Sabrina Carpenter
+            </span>
+        </div>
+    </div>
+
+    <div class="artist" style="margin-left: -700px; margin-top: 55px;">
+        <a href="https://music.youtube.com/watch?v=ammVGWIgOOU&si=QYt-0dVKrIFF7tjs">
+            <img style="margin-top: -0px;" src="Photos/Nasty.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 190px; margin-top: -90px; ">Nasty
+            <br>
+            <span class="author" style="margin-left: 10px; font-size: 15px; ">By Tinashe
+        </span>
+    </div>
+
+    <div class="artist" style="margin-left: -700px; margin-top: 45px;">
+        <a href="https://music.youtube.com/watch?v=X5aV5lXGybs&si=JMVUN8RdXoyvliul">
+            <img style="margin-top: -0px;" src="Photos/Alienated.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 225px; margin-top: -100px; ">Alienated 
+            <br>
+            <span class="author" style="margin-left: -45px; font-size: 15px; ">By Zayn
+        </span>
+    </div>
+    
+    <div class="artist" style="margin-top: -278px;">
+        <a href="https://music.youtube.com/watch?v=1N_fSpyCyT8&si=9gzpxU4OF_mPDX0-">
+            <img style="margin-top: -0px;" src="Photos/cards.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 330px; margin-top: -100px; ">Cards On The Table
+            <br>
+            <span class="author" style="margin-left: -95px; font-size: 15px; ">By Nia Archives
+        </span>
+    </div>
+
+    <div class="artist" style="margin-top: 55px;">
+        <a href="https://music.youtube.com/watch?v=OwZZl_wInGA&si=dtNZoHt5A0zvkLoA">
+            <img style="margin-top: -0px;" src="Photos/boundaries.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 240px; margin-top: -100px; ">Boundaries
+            <br>
+            <span class="author" style="margin-left: -10px; font-size: 15px; ">By Heleina Zara</span>
+        </span>
+    </div>
+
+    <div class="artist" style="margin-top: 55px;">
+        <a href="https://music.youtube.com/watch?v=uEjObVzZL0s&si=ZjH3-Zjqx8QcO1WL">
+            <img style="margin-top: -0px;" src="Photos/bird.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 320px; margin-top: -100px; ">Bird in a Hurricane
+            <br>
+            <span class="author" style="margin-left: -95px; font-size: 15px; ">By Mitch James
+        </span>
+    </div>
+
+    <div class="artist" style=" margin-left: 800; margin-top: -280px;">
+        <a href="https://music.youtube.com/watch?v=eF_axa2yMQA&si=qQ9smXg0Fb9YGZj0">
+            <img style="margin-top: -0px;" src="Photos/let me disappear.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 300px; margin-top: -100px; ">Let Me Disappear
+            <br>
+            <span class="author" style="margin-left: -95px; font-size: 15px; ">By Northlane
+        </span>
+    </div>
+
+    <div class="artist" style=" margin-left: 800; margin-top: 55px;">
+        <a href="https://music.youtube.com/watch?v=neabvcn86_4&si=oN2BI-frgzyVzhXP">
+            <img style="margin-top: -0px;" src="Photos/teenage.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 290px; margin-top: -100px; ">Teenage Summer
+            <br>
+            <span class="author" style="margin-left: -49px; font-size: 15px; ">By Crowded House
+        </span>
+    </div>
+
+    <div class="artist" style=" margin-left: 800; margin-top: 55px;">
+        <a href="https://music.youtube.com/watch?v=MVtKE9vLYCQ&si=M21jKq6th0vfy3B7">
+            <img style="margin-top: -0px;" src="Photos/worst enemy.jpeg" alt="Avatar">
+        </a>
+        <span class="icon-name"
+            style="font-family: Alice; font-size: 25px; margin-left: 260px; margin-top: -100px; ">Worst Enermy
+            <br>
+            <span class="author" style="margin-left: -35px; font-size: 15px; ">By Hein Cooper
+        </span>
+    </div>
+
+    <div class="label" style="margin-left: 330px; margin-top: 70px; font-family: shrikhand;">
+        NEW RELEASES
+    </div>
+
+    <div class="Icons-2">
+        <div class="artist" style="margin-left: -550px; margin-top: 20px;">
+            <a href="https://music.youtube.com/watch?v=fyIA6sfRmKU&si=nE8sL7jTxVTahKnY">
+                <img style="height: 200px; width: 200px;" src="Photos/she likes a boy.jpeg" alt="Avatar">
+            </a>
+            <span class="icon-name"
+                style="font-family: Alice; font-size: 25px; margin-left: 5px; margin-top: -10px; ">She Likes A Boy
+                <br>
+                <span class="author" style="margin-left: 10px; font-size: 15px; ">By Nxdia</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="Icons-2">
+        <div class="artist" style="margin-left: -40px; margin-top: -283px;">
+            <a href="https://music.youtube.com/watch?v=YQqbmcIG0_I&si=GpVK9FplZWp2Gjwh">
+                <img style="height: 200px; width: 200px;" src="Photos/evil.jpeg" alt="Avatar">
+            </a>
+            <span class="icon-name"
+                style="font-family: Alice; font-size: 25px; margin-left: 5px; margin-top: -10px; ">Evil 
+                <br>
+                <span class="author" style="margin-left: 10px; font-size: 15px; ">By Melanie Martinez</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="Icons-2">
+        <div class="artist" style="margin-left: 470px; margin-top: -313px;">
+            <a href="https://music.youtube.com/watch?v=KnIBMhmLRb4&si=T_OqE5f6Z1uApgDO">
+                <img style="height: 200px; width: 200px;" src="Photos/digital.jpeg" alt="Avatar">
+            </a>
+            <span class="icon-name"
+                style="font-family: Alice; font-size: 25px; margin-left: 5px; margin-top: -10px; ">Digital Hallucination 
+                <br>
+                <span class="author" style="margin-left: 10px; font-size: 15px; ">By OR3O</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="Icons-2">
+        <div class="artist" style="margin-left: 980px; margin-top: -343px;">
+            <a href="https://music.youtube.com/watch?v=KWEsdF57hB4&si=aUS3uoiVsYAjeufa">
+                <img style="height: 200px; width: 200px;" src="Photos/escapism.jpeg" alt="Avatar">
+            </a>
+            <span class="icon-name"
+                style="font-family: Alice; font-size: 25px; margin-left: 5px; margin-top: -10px; ">Escapism 
+                <br>
+                <span class="author" style="margin-left: 10px; font-size: 15px; ">By RAYA</span>
+            </span>
+        </div>
+    </div>
+
+    
+</body>

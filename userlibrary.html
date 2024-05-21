@@ -1,0 +1,155 @@
+<html>
+
+<head>
+    <title>User Library</title>
+    <link rel="stylesheet" href="userlibrary.css">
+    <link rel="stylesheet" href="userlibrary.js">
+    <link rel="shortcut icon" href="Photos/Logo ArtBeat blue.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
+    <link href='https://fonts.google.com/specimen/Alice?query=Alice' rel='stylesheet'>
+    <link href='https://fonts.google.com/specimen/Cardo?query=cardo' rel='stylesheet'>
+
+    <link rel="stylesheet" href="settings.css">
+    <script src="settings.html"></script>
+</head>
+
+<body onload="onload()">
+
+
+    <div class="box flex-container" style="background-color: rgba(255, 255, 255, 0.678); position: relative;">
+        <div class="avatar-container" style="margin-left: 40px; margin-top: 25px;">
+            <img class="avatar" onclick="document.location='profilepage.html'" src="Photos/Profile.png" alt="Avatar">
+            <button class="edit-button" onclick="uploadAvatar()">Edit</button>
+            <input type="file" id="avatar-input" accept="image/*" style="display: none;">
+        </div>
+        <script>
+            function uploadAvatar() {
+                document.getElementById('avatar-input').click();
+            }
+
+            document.getElementById('avatar-input').addEventListener('change', function () {
+                const file = this.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        document.querySelector('.avatar').src = e.target.result;
+                    }
+                    reader.readAsDataURL(file);
+                }
+            });
+        </script>
+
+        <div id="displayName"
+            style="font-family: shrikhand; color: rgb(142, 80, 199); margin-left: -1210px; margin-right: -425px; margin-top: 40px; font-size: 30px;">
+            Profile:
+        </div>
+
+        <!-- Placeholder for the dynamic profile name display -->
+        <div id="displayName"
+            style="font-family: shrikhand; color: rgb(142, 80, 199); margin-right: 860px; margin-top: 80px; font-size: 50px;">
+            Username
+        </div>
+
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Get the input field and display name element
+                const profileNameInput = document.getElementById("profileNameInput");
+                const displayName = document.getElementById("displayName");
+
+                // Function to update the display name
+                function updateDisplayName() {
+                    displayName.textContent = profileNameInput.value;
+                }
+
+                // Initial display name update
+                updateDisplayName();
+
+                // Event listener for input field changes
+                profileNameInput.addEventListener("input", updateDisplayName);
+            });
+        </script>
+    </div>
+    </div>
+    </div>
+
+    </div>
+    <div class="box flex-container"
+        style="background-color: rgba(163, 195, 255, 0.945); height: 70px; margin-top: 100px; position: relative;">
+
+        <button class="button1"
+            style="height: 50px; width: 210px; margin-left: 20px; margin-top: 10px; font-family: 'Shrikhand' "
+            onclick="document.location='explore.html'">Back</button>
+
+        <button class="button2" style="height: 50px; width: 210px; margin-top: 10px;  font-family: 'Shrikhand' "
+            onclick="document.location=''">Library</button>
+
+        <button class="button3" style="height: 50px; width: 210px; margin-top: 10px;  font-family: 'Shrikhand' "
+            onclick="document.location='flavourite.html'">Flavourite</button>
+
+        <button class="button4"
+            style="height: 50px; width: 210px; margin-right: 20px; margin-top: 10px;  font-family: 'Shrikhand'"
+            onclick="document.location='settings.html'">Settings
+        </button>
+    </div>
+
+    <form id="playlist-form" class="playlist-form" style="margin-top: 130px; font-family: shrikhand; color: rgb(48, 89, 255);">
+        <label for="song-title">Song Title:</label>
+        <input type="text" id="song-title" name="songTitle" placeholder="Enter song title">
+        <button type="submit">Add to Playlist</button>
+    </form>
+    <div class="playlist" style="font-family: Alice; color: rgba(240, 248, 255, 0.896);">
+        <h2>My Playlist</h2>
+        <ul class="playlist-songs">
+            <li class="empty-message">Add songs to start building your playlist!</li>
+        </ul>
+    </div>
+
+    <script>
+        const form = document.getElementById("playlist-form");
+        const songList = document.querySelector(".playlist-songs");
+        const emptyMessage = document.querySelector(".empty-message");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const songTitle = document.getElementById("song-title").value;
+
+            if (!songTitle.trim()) {
+                return; // Do nothing if the input is empty
+            }
+
+            // Create a new list item element for the song
+            const listItem = document.createElement("li");
+            listItem.textContent = songTitle;
+
+            // Add a button to remove the song
+            const removeButton = document.createElement("button");
+            removeButton.textContent = "Remove";
+            removeButton.classList.add("remove-song-btn");  /* Add a class for styling */
+            listItem.appendChild(removeButton);
+
+            // Add the list item to the playlist
+            songList.appendChild(listItem);
+
+            // Clear the input field for the next song
+            document.getElementById("song-title").value = "";
+
+            // Remove empty message if playlist has songs
+            if (songList.children.length > 1) {
+                emptyMessage.remove();
+            }
+
+            // Add functionality to remove songs using the button
+            removeButton.addEventListener("click", function () {
+                songList.removeChild(listItem);
+
+                // Show empty message again if there are no more songs
+                if (songList.children.length === 1) {
+                    songList.appendChild(emptyMessage);
+                }
+            });
+        });
+    </script>
+</body>

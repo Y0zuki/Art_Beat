@@ -6,8 +6,8 @@ body {
 }
 
 .box {
-    background: rgba(255, 255, 255, 0.575);
-    height: 100px;
+    background: rgba(255, 255, 255, 0.381);
+    height: 200px;
     margin-bottom: -100px;
     position: relative;
     z-index: 210;
@@ -60,8 +60,7 @@ body {
 }
 
 .flex-container>div {
-    width: 100px;
-    margin: 10px;
+    margin: 40px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
@@ -183,13 +182,141 @@ body {
     transition: 0s
 }
 
-.ReadMore {
-    background-color: #ffffff84;
-    height: 2350px;
+
+.Icons {
+    img {
+        border-radius: 50%;
+        width: 120px;
+    }
 }
 
-.TextStyle {
-    color: #8f75b1;
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
     text-align: center;
-    font-size: 60px;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-vimeo {
+    background: #5bc3ff;
+    color: white;
+}
+
+.Cover {
+    background-color: rgba(118, 71, 168, 0.349);
+    position: sticky;
+    position: relative;
+}
+
+.label {
+    background-color: rgba(151, 203, 255, 0.771);
+    width: 400px;
+    padding: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: #5b66c8;
+}
+
+.avatar-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* Make the profile container round */
+    overflow: hidden;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    /* Make the avatar round */
+}
+
+.edit-button {
+    position: absolute;
+    bottom: 35px;
+    left: 110px;
+    color: #ffffffd3;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-left: 30px;
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="url"],
+textarea {
+    margin-left: 30px;
+    width: 1450px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    margin-left: 30px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#artist-output {
+    margin-top: 20px;
 }

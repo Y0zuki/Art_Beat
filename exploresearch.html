@@ -1,0 +1,304 @@
+<html>
+
+<head>
+    <title>Search Explore</title>
+    <link rel="stylesheet" href="exploresearch.css">
+    <link rel="shortcut icon" href="Photos/Logo ArtBeat blue.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
+    <link href='https://fonts.google.com/specimen/Alice?query=Alice' rel='stylesheet'>
+    <link href='https://fonts.google.com/specimen/Cardo?query=cardo' rel='stylesheet'>
+</head>
+
+<body>
+
+
+    <div class="box flex-container"
+        style="background-color: rgba(151, 203, 255, 0.771); width: 79.9%; margin-left: 296px; position: relative;">
+
+        <form>
+            <input type="text" name="search" placeholder="Search.."
+                style="margin-top: 25px; margin-left: 65px; position: relative;">
+        </form>
+
+        <a href="#" class="fa fa-vimeo" style="margin-right: -900px; margin-top: 15px; height: 30px; width: 30px; ">
+            <div class="Icons">
+                <img src="Photos/bell.jpeg" alt="Avatar" style="margin-left: -15px; margin-top: -15px; width: 60px; "
+                    onclick="document.location='notification.html'">
+            </div>
+        </a>
+
+        <div class="Icons">
+            <img src="Photos/search.jpg" alt="Avatar"
+                style="margin-left: -2155px; margin-top: 10px; width: 60px; position: relative ">
+        </div>
+
+    </div>
+
+
+    <div class="sticky" style="position: fixed; margin-bottom: 15px; ">
+        <div> <img src="Photos/artbeat logo horizontal.png" style="width: 160px; height: 100px; margin-top: 300px; margin-left: 65px; position: fixed;">
+        </div>
+
+        <div class="Cover" style="height: 301px; width: 300px;"></div>
+
+        <!-- Placeholder for the dynamic profile name display -->
+        <div id="displayName"
+            style="font-family: shrikhand; color: rgb(142, 80, 199); margin-left: 60px; margin-top: -60px; font-size: 30px;">
+            Username
+        </div>
+
+        <div class="button5"
+            style="margin-left: 30px; margin-top: 150px;  margin-bottom: 30px; font-family: 'Shrikhand' "
+            onclick="document.location='index.html'">Home
+        </div>
+
+
+        <div class="button6" style="margin-left: 30px; margin-bottom: 30px;  font-family: 'Shrikhand' "
+            onclick="document.location='explore.html'">Explore
+        </div>
+
+        <div class="button7" style="margin-left: 30px; margin-bottom: 30px; font-family: 'Shrikhand' "
+            onclick="document.location='artist.html'">
+            Artist
+        </div>
+
+        <div class="button8" style="margin-left: 30px; margin-bottom: 30px; font-family: 'Shrikhand' "
+            onclick="document.location='.explorelibrary.html'">Library
+        </div>
+
+        <div class="button9" style="margin-left: 30px; margin-bottom: 30px; font-family: 'Shrikhand' "
+            onclick="document.location='userlibrary.html'">Create Playlist
+
+        </div>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Get the input field and display name element
+                const profileNameInput = document.getElementById("profileNameInput");
+                const displayName = document.getElementById("displayName");
+
+                // Function to update the display name
+                function updateDisplayName() {
+                    displayName.textContent = profileNameInput.value;
+                }
+
+                // Initial display name update
+                updateDisplayName();
+
+                // Event listener for input field changes
+                profileNameInput.addEventListener("input", updateDisplayName);
+            });
+        </script>
+
+    </div>
+    </div>
+
+    <div class="avatar-container" style="margin-left: 40px; margin-top: 30px; padding: 20px;">
+        <img class="avatar" onclick="document.location='profilepage.html'" src="Photos/Profile.png" alt="Avatar">
+        <button class="edit-button" onclick="uploadAvatar()" style="margin-right: 70px;">Edit</button>
+        <input type="file" id="avatar-input" accept="image/*" style="display: none;">
+    </div>
+
+
+    <script>
+        function uploadAvatar() {
+            document.getElementById('avatar-input').click();
+        }
+
+        document.getElementById('avatar-input').addEventListener('change', function () {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.querySelector('.avatar').src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+
+    <div class="button7" style="margin-left: 450px; margin-top: -110px; font-family: 'Shrikhand' "
+        onclick="document.location='language.html'">
+        Language
+    </div>
+
+    <div class="button8" style="margin-left: 780px; margin-top: -82px; font-family: 'Shrikhand' "
+        onclick="document.location='notification.html'">New Release
+    </div>
+
+    <div class="button9" style="margin-left: 1120px; margin-top: -82px; font-family: 'Shrikhand' "
+        onclick="document.location='comingsoon.html'">Charts
+
+    </div>
+
+    <div class="Pictureframe2" style="margin-top: 120px; margin-left: 300px; width: 1185; height: 680px;">
+
+        <div class="button7"
+            style="margin-left: 20px; margin-top: -100px; top: 10px; width: 250px; font-size: 30px; font-family: 'Shrikhand' ">
+            Genre
+        </div>
+
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 20px; margin-top: -100px; top: 130px; font-family: 'Shrikhand' ">
+            Pop music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 20px; margin-top: -100px; top: 209px;  font-family: 'Shrikhand' ">
+            Popular music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 20px; margin-top: -100px; top: 290px;  font-family: 'Shrikhand' ">
+            Rock
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 20px; margin-top: -100px; top: 370px;  font-family: 'Shrikhand' ">
+            Electronic music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 20px; margin-top: -100px; top: 450px;  font-family: 'Shrikhand' ">
+            Rhythm and blues
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 20px; margin-top: -100px; top: 530px;  font-family: 'Shrikhand' ">
+            Jazz
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 20px; margin-top: -100px; top: 610px;  font-family: 'Shrikhand' ">
+            Country music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 20px; margin-top: -100px; top: 690px;  font-family: 'Shrikhand' ">
+            Blues
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 20px; margin-top: -100px; top: 770px;  font-family: 'Shrikhand' ">
+            Hip Hop music
+        </div>
+
+
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 250px; margin-top: -100px; top: 301px; font-family: 'Shrikhand' ">
+        Soul music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 250px; margin-top: -100px; top: 380px;  font-family: 'Shrikhand' ">
+            Heavy metal
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 250px; margin-top: -100px; top: 461px;  font-family: 'Shrikhand' ">
+            Classical music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 250px; margin-top: -100px; top: 541px;  font-family: 'Shrikhand' ">
+            Folk music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 250px; margin-top: -100px; top: 621px;  font-family: 'Shrikhand' ">
+           Dance music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 250px; margin-top: -100px; top: 701px;  font-family: 'Shrikhand' ">
+            Techno
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 250px; margin-top: -100px; top: 781px;  font-family: 'Shrikhand' ">
+            World Music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 250px; margin-top: -100px; top: 861px;  font-family: 'Shrikhand' ">
+            Funk
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 250px; margin-top: -100px; top: 941px; font-size: 16px; font-family: 'Shrikhand' ">
+            Electronic dance music
+        </div>
+
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 480px; margin-top: -100px; top: 359px; font-family: 'Shrikhand' ">
+            Electro
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 480px; margin-top: -100px; top: 438px; font-family: 'Shrikhand' ">
+            Indie rock
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 480px; margin-top: -100px; top: 517px; font-family: 'Shrikhand' ">
+            Reggae
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 480px; margin-top: -100px; top: 597px;  font-family: 'Shrikhand' ">
+            New-age music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 480px; margin-top: -100px; top: 677px;  font-family: 'Shrikhand' ">
+            Disco
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 254, 255, 0.098); margin-left: 480px; margin-top: -101px; top: 758px;  font-family: 'Shrikhand' ">
+            Dubstep
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 480px; margin-top: -100px; top: 838px;  font-family: 'Shrikhand' ">
+            Musical theatre
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 480px; margin-top: -100px; top: 918px;  font-family: 'Shrikhand' ">
+            Ska
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 480px; margin-top: -100px; top: 998px;  font-family: 'Shrikhand' ">
+            Rock and roll
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 480px; margin-top: -100px; top: 1078px;  font-family: 'Shrikhand' ">
+            Christian music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 480px; margin-top: -100px; top: 1158px;  font-family: 'Shrikhand' ">
+            Alternative rock
+        </div>
+
+
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 710px; margin-top: -100px; top: 569px; font-family: 'Shrikhand' ">
+            Art music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 710px; margin-top: -100px; top: 648px; font-family: 'Shrikhand' ">
+            Jazz fusion
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 710px; margin-top: -100px; top: 727px; font-family: 'Shrikhand' ">
+            Dance-pop
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 710px; margin-top: -100px; top: 807px; font-family: 'Shrikhand' ">
+            Drum and bass
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 710px; margin-top: -100px; top: 887px;  font-family: 'Shrikhand' ">
+            Noise pop
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 254, 255, 0.098); margin-left: 710px; margin-top: -101px; top: 968px;  font-family: 'Shrikhand' ">
+            Post-rock
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 710px; margin-top: -100px; top: 1048px;  font-family: 'Shrikhand' ">
+            Punk rock
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 710px; margin-top: -100px; top: 1128px;  font-family: 'Shrikhand' ">
+            Vocal music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 710px; margin-top: -100px; top: 1208px;  font-family: 'Shrikhand' ">
+            House music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 710px; margin-top: -100px; top: 1288px; font-size: 16px; font-family: 'Shrikhand' ">
+            Music of latin America
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 710px; margin-top: -100px; top: 1368px; font-size: 16px; font-family: 'Shrikhand' ">
+            music of United States
+        </div>
+
+
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 940px;  margin-top: -100px; top: 799px; font-family: 'Shrikhand' ">
+            Deep house
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 940px;  margin-top: -100px; top: 878px; font-family: 'Shrikhand' ">
+            Hip Hop
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 940px;  margin-top: -100px; top: 957px; font-family: 'Shrikhand' ">
+            Music of Africa
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 940px;  margin-top: -100px; top: 1037px; font-family: 'Shrikhand' ">
+            Music of Asia
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 940px;  margin-top: -100px; top: 1117px;  font-family: 'Shrikhand' ">
+            Trance music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 254, 255, 0.098); margin-left: 940px;  margin-top: -101px; top: 1198px;  font-family: 'Shrikhand' ">
+            Salsa music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 940px;  margin-top: -100px; top: 1278px;  font-family: 'Shrikhand' ">
+            DJ
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 940px;  margin-top: -100px; top: 1358px;  font-family: 'Shrikhand' ">
+            Independent music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 940px;  margin-top: -100px; top: 1438px; font-size: 16px; font-family: 'Shrikhand' ">
+            Middle Eastern music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 940px;  margin-top: -100px; top: 1518px; font-size: 16px; font-family: 'Shrikhand' ">
+            Indian classical music
+        </div>
+        <div class="button7" style="background-color: rgba(255, 255, 255, 0.469); border-color: rgba(255, 255, 255, 0.098); margin-left: 940px; margin-top: -100px; top: 1598px; font-size: 15px; font-family: 'Shrikhand' ">
+            African-American music
+        </div>
+    </div>
+
+</body>

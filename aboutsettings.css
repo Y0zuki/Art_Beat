@@ -1,0 +1,57 @@
+body {
+    background-image: url(Photos/\ -3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .ReadMore {
+    background-color: #ffffff84;
+    height: 1000px;
+  }
+  
+.button8 {
+    position: relative;
+    background-color: rgba(133, 151, 231, 0.688);
+    border: rgba(59, 90, 183, 0.431);
+    border-style: solid;
+    font-size: 20px;
+    color: #4975a8;
+    padding: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+    margin-bottom: 25px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    /*height: 50px;*/
+  }
+  
+  .button8:after {
+    content: "";
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button8:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  .TextStyle {
+    color: rgba(141, 75, 195, 0.772);
+    text-align: center;
+    font-size: 60px;
+  }
+  

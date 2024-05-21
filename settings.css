@@ -1,0 +1,297 @@
+body {
+    background-image: url(Photos/\ -3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .box {
+    background: rgba(255, 255, 255, 0.381);
+    height: 200px;
+    margin-bottom: -100px;
+    position: relative;
+    z-index: 210;
+  }
+
+  .Icons {
+    img {
+      border-radius: 50%;
+      width: 120px;
+    }
+  }
+  
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-vimeo {
+    background: #5bc3ff;
+    color: white;
+  }
+  
+  .Cover {
+    background-color: rgba(118, 71, 168, 0.349);
+    position: sticky;
+    position: relative;
+  }
+  
+  .label {
+    background-color: rgba(151, 203, 255, 0.771);
+    width: 400px;
+    padding: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: #5b66c8;
+  }
+  
+  .avatar-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make the profile container round */
+    overflow: hidden;
+  }
+  
+  .avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* Make the avatar round */
+}
+  
+  .edit-button {
+    position: absolute;
+    bottom: 35px;
+    left: 115px;
+    color: #ffffffd3;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Switch styles */
+  body {
+    padding: 25px;
+    background-image: url('Photos/\ -3.jpg'); /* Default background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 25px;
+}
+
+.dark-mode {
+    background-image: url('Photos/\ -4.jpg'); /* Dark mode background image */
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 54px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0px;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 46px;
+    width: 5dvb;
+    left: 2px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #007bff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(102px);
+}
+
+.toggle-label {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.Pictureframe1 {
+  height: 530px;
+  width: 1445px;
+  margin-left: 0px;
+  margin-top: -500px;
+  background: linear-gradient(to bottom right, rgba(240, 174, 255, 0.815), rgba(25, 94, 255, 0.541));
+}
+
+.Cover {
+  background: #ffffff8a;
+  height: 470px;
+  width: 1380px;
+  bottom: -30px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.TextSettings {
+  color: rgba(109, 34, 149, 0.721);
+  margin-top: 140px;
+  font-size: 40px;
+ font-family: Shrikhand;
+}
+
+.Icons {
+  img {
+    border-radius: 50%;
+    width: 120px;
+  }
+}
+
+.ProfileCover{
+  background-color: #5b66c8;
+  height: 430px;
+  width: 380px;
+  margin-top: -30px;
+  margin-left: 965px;
+  padding: 20px;
+}
+
+.profile-container {
+  display: flex; /* Arranges elements horizontally */
+  align-items: center; /* Aligns elements vertically */
+  margin-bottom: 10px; /* Adds spacing below the container */
+}
+
+.profile-container label {
+  margin-right: 10px; /* Spacing between label and input */
+  font-weight: bold; /* Makes label text bolder */
+}
+
+#profileNameInput {
+  border: 1px solid #ccc;
+  border-radius: 3px; /* Rounded corners for input field */
+  padding: 5px; /* Padding inside the input field */
+}
+
+#displayName {
+  color: rgba(109, 34, 149, 0.721); /* Sets the display name color to purple */
+  margin-top: -970px;
+  margin-left: -1000px;
+  font-family: shrikhand;
+  font-size: 50px;
+}
+
+.biobox{
+  background-color: #ffffff;
+  height: 150px;
+  margin-top: 40px;
+}
+
+.button1 {
+  position: relative;
+  background-color: rgba(193, 172, 222, 0.835);
+  border: rgba(177, 131, 190, 0.725);
+  border-style: solid;
+  font-size: 20px;
+  color: #8f75b1;
+  padding: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  margin-top: 25px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  /*height: 50px;*/
+}
+
+.button1:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button1:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+/* Styling for the bio box */
+:root {
+  --text-color: #333;
+  --info-color: #666;
+}
+
+/* Styling for the textarea */
+textarea {
+  width: calc(100% - 16px); /* Adjust for padding */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+/* Styling for the button */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Hidden class for hiding elements */
+.hidden {
+  display: none;
+}
+

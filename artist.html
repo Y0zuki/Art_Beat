@@ -1,0 +1,220 @@
+<html>
+
+<head>
+    <title>Artist Info</title>
+    <link rel="stylesheet" href="artist.css">
+    <link rel="shortcut icon" href="Photos/Logo ArtBeat blue.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
+    <link href='https://fonts.google.com/specimen/Alice?query=Alice' rel='stylesheet'>
+    <link href='https://fonts.google.com/specimen/Cardo?query=cardo' rel='stylesheet'>
+</head>
+
+<body>
+
+
+    <div class="box flex-container"
+        style="background-color: rgba(151, 203, 255, 0.771); width: 79.9%; margin-left: 296px; margin-top: -24px; position: fixed;">
+
+        <form>
+            <input type="text" name="search" placeholder="Search.."
+                style="margin-top: 25px; margin-left: 65px; position: relative;">
+        </form>
+
+        <a href="#" class="fa fa-vimeo" style="margin-right: -900px; margin-top: 15px; height: 30px; width: 30px; ">
+            <div class="Icons">
+                <img src="Photos/bell.jpeg" alt="Avatar" style="margin-left: -15px; margin-top: -15px; width: 60px; "
+                    onclick="document.location='notification.html'">
+            </div>
+        </a>
+
+        <div class="Icons">
+            <img src="Photos/search.jpg" alt="Avatar"
+                style="margin-left: -2155px; margin-top: 10px; width: 60px; position: relative; ">
+        </div>
+
+    </div>
+
+
+    <div class="sticky" style="position: fixed; margin-bottom: 15px; ">
+        <div> <img src="Photos/artbeat logo horizontal.png" style="width: 160px; height: 100px; margin-top: 300px; margin-left: 65px; position: fixed;">
+        </div>
+
+        <div class="Cover" style="height: 301px; width: 300px;"></div>
+
+        <!-- Placeholder for the dynamic profile name display -->
+        <div id="displayName"
+            style="font-family: shrikhand; color: rgb(142, 80, 199); margin-left: 60px; margin-top: -50px; font-size: 30px;">
+            Username
+        </div>
+
+        <div class="button5"
+            style="margin-left: 30px; margin-top: 150px;  margin-bottom: 30px; font-family: 'Shrikhand' "
+            onclick="document.location='index.html'">Home
+        </div>
+
+
+        <div class="button6" style="margin-left: 30px; margin-bottom: 30px;  font-family: 'Shrikhand' "
+            onclick="document.location='exploresearch.html'">Explore
+        </div>
+
+        <div class="button7" style="margin-left: 30px; margin-bottom: 30px; font-family: 'Shrikhand' "
+            onclick="document.location='artist.html'">
+            Artist
+        </div>
+
+        <div class="button8" style="margin-left: 30px; margin-bottom: 30px; font-family: 'Shrikhand' "
+            onclick="document.location='explorelibrary.html'">Library
+        </div>
+
+        <div class="button9" style="margin-left: 30px; margin-bottom: 30px; font-family: 'Shrikhand' "
+            onclick="document.location='userlibrary.html'">Create Playlist
+
+        </div>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Get the input field and display name element
+                const profileNameInput = document.getElementById("profileNameInput");
+                const displayName = document.getElementById("displayName");
+
+                // Function to update the display name
+                function updateDisplayName() {
+                    displayName.textContent = profileNameInput.value;
+                }
+
+                // Initial display name update
+                updateDisplayName();
+
+                // Event listener for input field changes
+                profileNameInput.addEventListener("input", updateDisplayName);
+            });
+        </script>
+
+    </div>
+    </div>
+
+    <div class="avatar-container" style="margin-left: 40px; margin-top: 30px; padding: 20px; ">
+        <img class="avatar" onclick="document.location='profilepage.html'" src="Photos/Profile.png" alt="Avatar">
+        <button class="edit-button" onclick="uploadAvatar()" style="margin-right: 70px;">Edit</button>
+        <input type="file" id="avatar-input" accept="image/*" style="display: none;">
+    </div>
+
+
+    <script>
+        function uploadAvatar() {
+            document.getElementById('avatar-input').click();
+        }
+
+        document.getElementById('avatar-input').addEventListener('change', function () {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.querySelector('.avatar').src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+
+    <div class="label" style="margin-left: 330px; margin-top: -100px; font-family: shrikhand;">
+        ARTIST TO GET STARTED
+    </div>
+
+
+
+
+    <div class="Icons2">
+        <a href="https://en.wikipedia.org/wiki/Taylor_Swift">
+            <img src="Photos/Taylor Swift.webp" alt="Avatar" style="margin-left: 330px; margin-top: 15px;">
+        </a>
+        <span class="icon-name" style=" font-family: 'Alice'; font-size: 30px; color: #6a35b0ae">Taylor Swift</span>
+        <a href="https://en.wikipedia.org/wiki/Rihanna">
+            <img src="Photos/Rihanna.jpeg" alt="Avatar" style="margin-left: 175px; margin-top: 15px;">
+        </a>
+        <span class="icon-name" style=" font-family: 'Alice'; font-size: 30px; color: #6a35b0ae">Rihanna</span>
+        <a href="https://en.wikipedia.org/wiki/Britney_Spears">
+            <img src="Photos/Britney Spears.jpeg" alt="Avatar" style="margin-left: 225px; margin-top: 15px;">
+        </a>
+        <span class="icon-name" style=" font-family: 'Alice'; font-size: 30px; color: #6a35b0ae">Britney Spears</span>
+    </div>
+
+    <div class="Icons2">
+        <a href="https://en.wikipedia.org/wiki/Ariana_Grande">
+            <img src="Photos/Arianna.jpeg" alt="Avatar" style="margin-left: 330px; margin-top: 15px;">
+        </a>
+        <span class="icon-name" style=" font-family: 'Alice'; font-size: 30px; color: #6a35b0ae">Ariana Grande</span>
+        <a href="https://en.wikipedia.org/wiki/Ed_Sheeran">
+            <img src="Photos/Ed Sheeran.jpeg" alt="Avatar" style="margin-left: 148px; margin-top: 15px;">
+        </a>
+        <span class="icon-name" style=" font-family: 'Alice'; font-size: 30px; color: #6a35b0ae">Ed Sheeran</span>
+        <a href="https://en.wikipedia.org/wiki/Doja_Cat">
+            <img src="Photos/Doja.jpeg" alt="Avatar" style="margin-left: 187px; margin-top: 15px;">
+        </a>
+        <span class="icon-name" style=" font-family: 'Alice'; font-size: 30px; color: #6a35b0ae">Doja Cat</span>
+    </div>
+
+    <div class="Icons2">
+        <a href="https://en.wikipedia.org/wiki/Justin_Bieber">
+            <img src="Photos/Justin.jpeg" alt="Avatar" style="margin-left: 330px; margin-top: 15px;">
+        </a>
+        <span class="icon-name" style=" font-family: 'Alice'; font-size: 30px; color: #6a35b0ae">Justin Bieber
+        </span>
+        <a href="https://en.wikipedia.org/wiki/Mariah_Carey">
+            <img src="Photos/Mariah.jpeg" alt="Avatar" style="margin-left: 165px; margin-top: 15px;">
+        </a>
+        <span class="icon-name" style=" font-family: 'Alice'; font-size: 30px; color: #6a35b0ae">Mariah Carey</span>
+        <a href="https://en.wikipedia.org/wiki/Selena_Gomez">
+            <img src="Photos/Selena.jpeg" alt="Avatar" style="margin-left: 159px; margin-top: 15px;">
+        </a>
+        <span class="icon-name" style=" font-family: 'Alice'; font-size: 30px; color: #6a35b0ae">Selena Gomez</span>
+    </div>
+
+    <div class="label" style="margin-left: 330px; margin-top: 30px; font-family: shrikhand;">
+        ARTIST YOU MIGHT KNOW
+    </div>
+
+    <div class="shelf-container" style="height: 400px; width: 1200px; margin-left: 320px;">
+        <div class="shelf">
+            <div class="book front" style="width: 260px; height: 300px; margin-top: 20px;">
+                <a href="https://en.wikipedia.org/wiki/Fujii_Kaze">
+                    <img src="Photos/Fujii.jpeg" alt="Book 1 Cover">
+                </a>
+                <h2 style="font-family: 'Alice'; font-size: 30px; margin-top: 0px; color: #6a35b0ae;">Fujii Kaze</h2>
+            </div>
+
+        </div>
+
+        <div class="shelf">
+            <div class="book front" style="width: 260px; height: 300px; margin-top: 20px;">
+                <a href="https://en.wikipedia.org/wiki/Yoasobi">
+                    <img src="Photos/Yoasobi.jpg" alt="Book 2 Cover">
+                </a>
+                <h2 style="font-family: 'Alice'; font-size: 30px; margin-top: 0px; color: #6a35b0ae;">Yoasobi</h2>
+            </div>
+        </div>
+
+        <div class="shelf">
+            <div class="book front" style="width: 260px; height: 300px; margin-top: 20px;">
+                <a href="https://en.wikipedia.org/wiki/Billie_Eilish">
+                    <img src="Photos/billie.jpeg" alt="Book 2 Cover">
+                </a>
+                <h2 style="font-family: 'Alice'; font-size: 30px; margin-top: 0px; color: #6a35b0ae;">Billie Eillish
+                </h2>
+            </div>
+        </div>
+
+        <div class="shelf">
+            <div class="book front" style="width: 290px; height: 300px; margin-top: 20px;">
+                <a href="https://en.wikipedia.org/wiki/Charlie_Puth">
+                    <img src="Photos/charlie.jpeg" alt="Book 2 Cover">
+                </a>
+                <h2 style="font-family: 'Alice'; font-size: 30px; margin-top: 0px; color: #6a35b0ae;">Charlie Puth</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="artist.js"></script>
+    </div>
+</body>

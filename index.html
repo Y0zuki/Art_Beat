@@ -3,7 +3,7 @@
 <head>
   <title>Homepage</title>
   <link rel="stylesheet" href="index.css">
-  <link rel="shortcut icon" href="Photos/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="Photos/Logo ArtBeat blue.png" type="image/x-icon">
   <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
   <link href='https://fonts.google.com/specimen/Alice?query=Alice' rel='stylesheet'>
   <link href='https://fonts.google.com/specimen/Cardo?query=cardo' rel='stylesheet'>
@@ -11,49 +11,56 @@
 
 <body>
   <div class="box flex-container">
-    <div> <img src="Photos/logo.png" style="height: 250px; width: 250px; margin-top: -85%; margin-left: 5%;"></div>
+    <div> <img src="Photos/logo horizontal.png"  style=" height: 100px; width: 160px; margin-top: -5%; margin-left: 5%;"></div>
     <div class="Textbox1"></div>
-    <button class="button1" style="height: 50px; width: 210px; font-family: 'Shrikhand' ">Home</button>
-    <button class="button2" style="height: 50px; width: 210px;  font-family: 'Shrikhand' ">Explore</button>
-    <button class="button3" style="height: 50px; width: 210px;  font-family: 'Shrikhand' ">Community</button>
+    <button class="button1" style="height: 50px; width: 210px; font-family: 'Shrikhand' " onclick="document.location='index.html'">Home</button>
+    <button class="button2" style="height: 50px; width: 210px;  font-family: 'Shrikhand' " onclick="document.location='explore.html'">Explore</button>
+    <button class="button3" style="height: 50px; width: 210px;  font-family: 'Shrikhand' " onclick="document.location='community.html'">Community</button>
     <button class="button4" style="height: 50px; width: 210px;  font-family: 'Shrikhand'"
       onclick="document.location='helpcenter.html'">Help</button>
 
   </div>
   <div class="WelcomeBanner" style="margin-top: 120; margin-left: 140px; font-family: 'Shrikhand' ">WELCOME TO
-    MIXTRACK
-    <div class="TextWelcome" style="font-family: Alice;">Hello fellow user, welcome to Mixtrack!</div>
+    ART BEAT
+    <div class="TextWelcome" style="font-family: Alice;">Hello fellow user, welcome to Art Beat!</div>
   </div>
 
   <div class="AboutPage" style="font-family: Shrikhand;">About Page
     <div class="Imageaboutpage" style="width: 340px; height: 340px; margin-left: -60px;">
-      <div><img src="Photos/earphone.jpg" style="height: 300px; width: 300px; margin-left: 20px; margin-top: 20px;">
+      <div><img src="Photo/earphone.jpg" style="height: 300px; width: 300px; margin-left: 20px; margin-top: 20px;">
       </div>
     </div>
   </div>
   <div class="buttonreadmore" style="margin-left: 90px; font-family: Shrikhand;" onclick="document.location='readmore.html'">READ MORE</div>
-  <div class="short_infomation" style="margin-top: -410px; margin-left: 390px; font-family: Alice;">Mixtrack is a
-    platfrom for <br> music lovers to enjoy and <br> discover new songs of their <br> taste.</div>
+  <div class="short_infomation" style="margin-top: -410px; margin-left: 390px; font-family: Alice;">Art Beat is a
+    platfrom for <br> all music and art lovers to <br> enjoy and discover new <br> songs of their taste as well<br>
+    as browsing for famous <br>
+    in our website library.</div>
 
-  <div class="Articlebackcover"></div>
+  <div class="Articlebackcover" style="margin-top: -200px;"></div>
   <div class="Movingarticle" style="height: 110px; width: 400px; margin-left: 1000px; margin-top: -140; ">
     <div class="slideshow-container">
       <div class="mySlides fade">
-        <img src="Photos/poster1.jpg" style="width: 75%; height: 400px; margin-left: 45px;">
+        <img src="Photo/WechatIMG237.jpg" style="width: 75%; height: 400px; margin-left: 45px;">
       </div>
 
       <div class="mySlides fade">
-        <img src="Photos/poster2.jpg" style="width: 75%; height: 400; margin-left: 45px;">
+        <img src="Photo/poster2.jpg" style="width: 75%; height: 400; margin-left: 45px;">
       </div>
 
       <div class="mySlides fade">
-        <img src="Photos/poster3.jpg" style="width: 75%; height: 400; margin-left: 45px;">
+        <img src="Photo/poster3.jpg" style="width: 75%; height: 400; margin-left: 45px;">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="Photo/Promotional Poster.jpg" style="width: 75%; height: 400; margin-left: 45px;">
       </div>
 
     </div>
     <br>
 
     <div style="text-align:center; margin-top: 20;">
+      <span class="dot"></span>
       <span class="dot"></span>
       <span class="dot"></span>
       <span class="dot"></span>
@@ -116,7 +123,18 @@
             <input type="password" name="password" placeholder="Password" required>
             <input type="submit" value="Login">
           </div>
-
+          
+          <script>
+            // Function to update username
+            function updateUsername() {
+                var newName = document.getElementById("usernameInput").value;
+                if (newName.trim() !== "") {
+                    // You can update the username wherever it's displayed
+                    // For example, if you have a greeting message, you can update it here
+                    document.getElementById("greetingMessage").innerText = "Welcome, " + newName + "!";
+                }
+            }
+        </script>
         </div>
       </form>
     </div>

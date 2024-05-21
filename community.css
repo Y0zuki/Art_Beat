@@ -3,17 +3,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-
-.box {
+  }
+  
+  .box {
     background: rgba(255, 255, 255, 0.575);
     height: 100px;
     margin-bottom: -100px;
     position: relative;
     z-index: 210;
-}
-
-.button1 {
+  }
+  
+  .button1 {
     position: relative;
     background-color: rgba(193, 172, 222, 0.688);
     border: rgba(177, 131, 190, 0.431);
@@ -30,9 +30,9 @@ body {
     overflow: hidden;
     cursor: pointer;
     /*height: 50px;*/
-}
-
-.button1:after {
+  }
+  
+  .button1:after {
     content: "";
     background: #ffffff;
     display: block;
@@ -43,31 +43,31 @@ body {
     margin-top: -120%;
     opacity: 0;
     transition: all 0.8s
-}
-
-.button1:active:after {
+  }
+  
+  .button1:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s
-}
-
-.flex-container {
+  }
+  
+  .flex-container {
     display: flex;
     justify-content: right;
     justify-content: space-between;
-
-}
-
-.flex-container>div {
+  
+  }
+  
+  .flex-container>div {
     width: 100px;
     margin: 10px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
-}
-
-.button2 {
+  }
+  
+  .button2 {
     position: relative;
     background-color: rgba(193, 172, 222, 0.688);
     border: rgba(177, 131, 190, 0.431);
@@ -83,9 +83,9 @@ body {
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
-}
-
-.button2:after {
+  }
+  
+  .button2:after {
     content: "";
     background: #ffffff;
     display: block;
@@ -96,16 +96,16 @@ body {
     margin-top: -120%;
     opacity: 0;
     transition: all 0.8s
-}
-
-.button2:active:after {
+  }
+  
+  .button2:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s
-}
-
-.button3 {
+  }
+  
+  .button3 {
     position: relative;
     background-color: rgba(193, 172, 222, 0.688);
     border: rgba(177, 131, 190, 0.431);
@@ -121,9 +121,9 @@ body {
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
-}
-
-.button3:after {
+  }
+  
+  .button3:after {
     content: "";
     background: #ffffff;
     display: block;
@@ -134,16 +134,16 @@ body {
     margin-top: -120%;
     opacity: 0;
     transition: all 0.8s
-}
-
-.button3:active:after {
+  }
+  
+  .button3:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s
-}
-
-.button4 {
+  }
+  
+  .button4 {
     position: relative;
     background-color: rgba(193, 172, 222, 0.688);
     border: rgba(177, 131, 190, 0.431);
@@ -160,10 +160,10 @@ body {
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
-
-}
-
-.button4:after {
+  
+  }
+  
+  .button4:after {
     content: "";
     background: #ffffff;
     display: block;
@@ -174,22 +174,54 @@ body {
     margin-top: -120%;
     opacity: 0;
     transition: all 0.8s
-}
-
-.button4:active:after {
+  }
+  
+  .button4:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s
-}
+  }
 
-.ReadMore {
-    background-color: #ffffff84;
-    height: 2350px;
-}
-
-.TextStyle {
-    color: #8f75b1;
-    text-align: center;
-    font-size: 60px;
-}
+  .communityhub {
+    body, html {
+        height: 100%;
+        margin: 0;
+      }
+      
+      .bgimg {
+        background-image: url('Photos/Music\ coming\ soon.png');
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 25px;
+      }
+      
+      .topleft {
+        position: absolute;
+        top: 0;
+        left: 16px;
+      }
+      
+      .bottomleft {
+        position: absolute;
+        bottom: 0;
+        left: 16px;
+      }
+      
+      .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+      hr {
+        margin: auto;
+        width: 40%;
+      }
+  }
